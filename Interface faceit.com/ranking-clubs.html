@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FACEIT - Club Rankings</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="dashboard.css">
+    <link rel="stylesheet" href="clubs.css">
+</head>
+
+<body class="dashboard-body">
+
+    <div class="top-promo-banner theme-green">
+        <span>✈️ Run FACEIT directly from your desktop!</span>
+        <button class="btn-promo">TẢI XUỐNG</button>
+        <span class="close-promo">✕</span>
+    </div>
+
+    <div class="dashboard-layout">
+        <aside class="left-sidebar">
+            <div class="sidebar-header">
+                <div class="logo">FACE<span>I</span>T</div>
+            </div>
+            <div class="sidebar-search">
+                <span class="search-icon">🔍</span>
+                <input type="text" placeholder="Tìm kiếm">
+            </div>
+            <nav class="sidebar-nav">
+                <a href="#" class="nav-link"><span class="icon">👥</span> Party Finder</a>
+                <a href="#" class="nav-link"><span class="icon">▶</span> Chơi</a>
+                <a href="#" class="nav-link active"><span class="icon">📊</span> Xếp hạng</a>
+                <a href="#" class="nav-link"><span class="icon">📈</span> Track</a>
+                <a href="#" class="nav-link"><span class="icon">📺</span> Watch</a>
+                <a href="#" class="nav-link"><span class="icon">📰</span> Nguồn cấp dữ liệu</a>
+            </nav>
+            <div class="sidebar-section">
+                <a href="#" class="nav-link"><span class="icon">🛡️</span> Clubs</a>
+                <a href="#" class="nav-link"><span class="icon">⊕</span> Create a Club</a>
+            </div>
+            <div class="sidebar-bottom">
+                <a href="#" class="nav-link"><span class="icon">🎯</span> Nhiệm vụ</a>
+                <a href="#" class="nav-link"><span class="icon">🛒</span> Cửa hàng</a>
+                <a href="#" class="nav-link highlight-green"><span class="icon">⭐</span> Nâng cấp</a>
+            </div>
+        </aside>
+
+        <main class="dashboard-main clubs-page">
+
+            <div class="play-header-top">
+                <div class="game-info-wrapper">
+                    <img src="https://images.unsplash.com/photo-1542751371-adc38448a05e?w=50&q=80" alt="CS2"
+                        class="game-icon-small">
+                    <span class="dots">•••</span>
+                    <span class="text-muted text-xs font-bold">SEA</span>
+                </div>
+                <div class="ranking-tabs-main">
+                    <a href="#" class="r-tab-main">GHÉP TRẬN</a>
+                    <a href="#" class="r-tab-main">FPL</a>
+                    <a href="#" class="r-tab-main active">CLUBS</a>
+                </div>
+            </div>
+
+            <div class="notice-banner mt-20">
+                <span class="info-icon-circle">ℹ</span>
+                <p>Club Rankings are paused for a comprehensive redesign focused on a fairer and improved system. There
+                    will be no Pre-Season 5. Thank you for your participation.</p>
+            </div>
+
+            <div class="clubs-header-controls mt-20">
+                <div class="filter-group">
+                    <select class="filter-select disabled-look">
+                        <option value="apac">Asia-Pacific</option>
+                    </select>
+
+                    <select class="filter-select">
+                        <option value="s4" selected>Mùa giải 4</option>
+                        <option value="s3">Mùa giải 3</option>
+                        <option value="s2">Mùa giải 2</option>
+                        <option value="s1">Mùa giải 1</option>
+                    </select>
+                </div>
+
+                <div class="date-info text-right text-xs text-muted">
+                    <span class="font-bold text-main block">Đã kết thúc</span>
+                    <span>Th 3, 19 thg 8 2025, 10:00 - Th 2, 01 thg 12 2025, 10:00</span>
+                </div>
+            </div>
+
+            <div class="clubs-hero mt-20">
+                <div class="text-center text-xs font-bold text-green mb-10 cursor-pointer">
+                    HOW CAN I PARTICIPATE? ⌃
+                </div>
+
+                <h3 class="hero-subtitle text-muted">Club rankings PRE-SEASON</h3>
+                <div class="hero-icon-wrapper my-15">
+                    <img src="https://images.unsplash.com/photo-1542751371-adc38448a05e?w=50&q=80" alt="Logo"
+                        class="hero-logo">
+                </div>
+                <h2 class="hero-title">Compete and take your club to glory!</h2>
+                <p class="hero-desc text-sm font-bold mt-5">Play matches, grind and gather points to get your club reach
+                    the top.</p>
+
+                <div class="hero-steps mt-40">
+                    <div class="step-card">
+                        <div class="step-header">
+                            <span class="step-num bg-green text-black">1</span>
+                            <h4 class="font-bold">Create or join a club</h4>
+                        </div>
+                        <p class="text-xs text-muted mt-10">Build or join a club dedicated to win. Group up, start the
+                            grind and compete in the rankings together.</p>
+                        <div class="step-actions mt-15">
+                            <a href="#" class="text-green font-bold text-xs">+ CREATE CLUB</a>
+                            <a href="#" class="text-green font-bold text-xs ml-15">🔍 DISCOVER CLUBS</a>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-header">
+                            <span class="step-num bg-green text-black">2</span>
+                            <h4 class="font-bold">Invite friends</h4>
+                        </div>
+                        <p class="text-xs text-muted mt-10">Gather the winner squad by inviting friends. It's okay to
+                            "forget" your Skill level 1 friend out of this one... we won't tell.</p>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-header">
+                            <span class="step-num bg-green text-black">3</span>
+                            <h4 class="font-bold">Reach the top!</h4>
+                        </div>
+                        <p class="text-xs text-muted mt-10">Play 5-stack matches through club parties. Improve your
+                            club's score and standing by bringing wins home.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="table-actions text-right mt-20 mb-10">
+                <a href="#" class="text-green font-bold text-xs mr-20">🔍 DISCOVER CLUBS</a>
+                <a href="#" class="text-green font-bold text-xs">+ CREATE CLUB</a>
+            </div>
+
+            <div class="fpl-table-container table-responsive">
+                <table class="stats-table fpl-table clubs-table">
+                    <thead>
+                        <tr>
+                            <th class="text-center width-50">#</th>
+                            <th>Club</th>
+                            <th>Chủ sở hữu</th>
+                            <th class="text-center">Quốc gia</th>
+                            <th class="text-center">Loại</th>
+                            <th class="text-center">Thành viên</th>
+                            <th class="text-center">CR Score ℹ️</th>
+                            <th class="text-center width-100">Giải thưởng</th>
+                        </tr>
+                    </thead>
+                    <tbody id="clubs-tbody">
+
+                        <tr>
+                            <td class="text-center font-bold">1</td>
+                            <td>
+                                <div class="team-cell">
+                                    <img src="https://images.unsplash.com/photo-1511512578047-dfb367046420?w=30&h=30&fit=crop"
+                                        class="team-logo-small">
+                                    <span class="font-bold text-sm">VT Esport</span>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="team-cell">
+                                    <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=30&h=30&fit=crop"
+                                        class="p-avatar">
+                                    <span>Shank9555</span>
+                                </div>
+                            </td>
+                            <td class="text-center text-muted">—</td>
+                            <td class="text-center text-muted text-xs">Private</td>
+                            <td class="text-center text-muted text-xs">👥 25/50</td>
+                            <td class="text-center font-bold">11.921</td>
+                            <td class="text-center">
+                                <div class="prize-box">$2,000</div>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="text-center font-bold">2</td>
+                            <td>
+                                <div class="team-cell">
+                                    <img src="https://images.unsplash.com/photo-1542751371-adc38448a05e?w=30&h=30&fit=crop"
+                                        class="team-logo-small">
+                                    <span class="font-bold text-sm">Your Fav Indogs</span>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="team-cell">
+                                    <img src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=30&h=30&fit=crop"
+                                        class="p-avatar">
+                                    <span>SalimShady</span>
+                                </div>
+                            </td>
+                            <td class="text-center text-muted">—</td>
+                            <td class="text-center text-muted text-xs">Đơn đăng ký</td>
+                            <td class="text-center text-muted text-xs">👥 49/50</td>
+                            <td class="text-center font-bold">11.546</td>
+                            <td class="text-center">
+                                <div class="prize-box">$1,000</div>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="text-center font-bold">3</td>
+                            <td>
+                                <div class="team-cell">
+                                    <img src="https://images.unsplash.com/photo-1552820728-8b83bb6b773f?w=30&h=30&fit=crop"
+                                        class="team-logo-small">
+                                    <span class="font-bold text-sm">36Peek</span>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="team-cell">
+                                    <img src="https://images.unsplash.com/photo-1527980965255-d3b416303d12?w=30&h=30&fit=crop"
+                                        class="p-avatar">
+                                    <span>jinwoo888</span>
+                                </div>
+                            </td>
+                            <td class="text-center text-muted">—</td>
+                            <td class="text-center text-muted text-xs">Private</td>
+                            <td class="text-center text-muted text-xs">👥 7/50</td>
+                            <td class="text-center font-bold">11.237</td>
+                            <td class="text-center">
+                                <div class="prize-box">$500</div>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="text-center font-bold">4</td>
+                            <td>
+                                <div class="team-cell">
+                                    <img src="https://images.unsplash.com/photo-1614030424754-24d0eebd46ad?w=30&h=30&fit=crop"
+                                        class="team-logo-small">
+                                    <span class="font-bold text-sm">Team-U40-SG</span>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="team-cell">
+                                    <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?w=30&h=30&fit=crop"
+                                        class="p-avatar">
+                                    <span>-Bmz</span>
+                                </div>
+                            </td>
+                            <td class="text-center text-muted">—</td>
+                            <td class="text-center text-muted text-xs">Private</td>
+                            <td class="text-center text-muted text-xs">👥 32/50</td>
+                            <td class="text-center font-bold">10.913</td>
+                            <td class="text-center">
+                                <div class="prize-box">$250</div>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="text-center font-bold">5</td>
+                            <td>
+                                <div class="team-cell">
+                                    <img src="https://images.unsplash.com/photo-1566577739112-5180d4bf9390?w=30&h=30&fit=crop"
+                                        class="team-logo-small">
+                                    <span class="font-bold text-sm">Wolf Pack</span>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="team-cell">
+                                    <img src="https://images.unsplash.com/photo-1599566150163-29194dcaad36?w=30&h=30&fit=crop"
+                                        class="p-avatar">
+                                    <span>Usari</span>
+                                </div>
+                            </td>
+                            <td class="text-center text-muted">—</td>
+                            <td class="text-center text-muted text-xs">Private</td>
+                            <td class="text-center text-muted text-xs">👥 50/50</td>
+                            <td class="text-center font-bold">10.398</td>
+                            <td class="text-center">
+                                <div class="prize-box">$250</div>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="text-center font-bold">6</td>
+                            <td>
+                                <div class="team-cell"><span class="icon-placeholder micro">👤</span><span
+                                        class="font-bold text-sm">Vuot nang thang mua</span></div>
+                            </td>
+                            <td>
+                                <div class="team-cell"><img
+                                        src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=30&h=30&fit=crop"
+                                        class="p-avatar"><span>HiRambo</span></div>
+                            </td>
+                            <td class="text-center text-muted">—</td>
+                            <td class="text-center text-muted text-xs">Private</td>
+                            <td class="text-center text-muted text-xs">👥 15/50</td>
+                            <td class="text-center font-bold">10.397</td>
+                            <td class="text-center">
+                                <div class="prize-box">$100</div>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="text-center font-bold">7</td>
+                            <td>
+                                <div class="team-cell"><img
+                                        src="https://images.unsplash.com/photo-1511512578047-dfb367046420?w=30&h=30&fit=crop"
+                                        class="team-logo-small"><span class="font-bold text-sm">WOLFGANG-wooo</span>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="team-cell"><img
+                                        src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=30&h=30&fit=crop"
+                                        class="p-avatar"><span>jongerftw</span></div>
+                            </td>
+                            <td class="text-center text-muted">—</td>
+                            <td class="text-center text-muted text-xs">Private</td>
+                            <td class="text-center text-muted text-xs">👥 26/50</td>
+                            <td class="text-center font-bold">10.391</td>
+                            <td class="text-center">
+                                <div class="prize-box">$100</div>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="text-center font-bold">8</td>
+                            <td>
+                                <div class="team-cell"><span class="icon-placeholder micro text-orange">🔥</span><span
+                                        class="font-bold text-sm">LaoHaePEEK</span></div>
+                            </td>
+                            <td>
+                                <div class="team-cell"><img
+                                        src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=30&h=30&fit=crop"
+                                        class="p-avatar"><span>--k3n--</span></div>
+                            </td>
+                            <td class="text-center text-muted">—</td>
+                            <td class="text-center text-muted text-xs">Đơn đăng ký</td>
+                            <td class="text-center text-muted text-xs">👥 7/50</td>
+                            <td class="text-center font-bold">10.380</td>
+                            <td class="text-center">
+                                <div class="prize-box">$100</div>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="text-center font-bold">9</td>
+                            <td>
+                                <div class="team-cell"><span class="icon-placeholder micro">👤</span><span
+                                        class="font-bold text-sm">Ying Yang</span></div>
+                            </td>
+                            <td>
+                                <div class="team-cell"><img
+                                        src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=30&h=30&fit=crop"
+                                        class="p-avatar"><span>lexor5k-</span></div>
+                            </td>
+                            <td class="text-center text-muted">—</td>
+                            <td class="text-center text-muted text-xs">Đơn đăng ký</td>
+                            <td class="text-center text-muted text-xs">👥 16/50</td>
+                            <td class="text-center font-bold">10.340</td>
+                            <td class="text-center">
+                                <div class="prize-box">$100</div>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="text-center font-bold">10</td>
+                            <td>
+                                <div class="team-cell"><img
+                                        src="https://images.unsplash.com/photo-1542751371-adc38448a05e?w=30&h=30&fit=crop"
+                                        class="team-logo-small"><span class="font-bold text-sm">Online Dogs</span></div>
+                            </td>
+                            <td>
+                                <div class="team-cell"><img
+                                        src="https://images.unsplash.com/photo-1566577739112-5180d4bf9390?w=30&h=30&fit=crop"
+                                        class="p-avatar"><span>adnanley_</span></div>
+                            </td>
+                            <td class="text-center text-muted">—</td>
+                            <td class="text-center text-muted text-xs">Đơn đăng ký</td>
+                            <td class="text-center text-muted text-xs">👥 6/50</td>
+                            <td class="text-center font-bold">10.302</td>
+                            <td class="text-center">
+                                <div class="prize-box">$100</div>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="text-center font-bold">11</td>
+                            <td>
+                                <div class="team-cell"><span class="icon-placeholder micro">👤</span><span
+                                        class="font-bold text-sm">Cement Mixers 619</span></div>
+                            </td>
+                            <td>
+                                <div class="team-cell"><img
+                                        src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=30&h=30&fit=crop"
+                                        class="p-avatar"><span>-kakoja</span></div>
+                            </td>
+                            <td class="text-center text-muted">—</td>
+                            <td class="text-center text-muted text-xs">Private</td>
+                            <td class="text-center text-muted text-xs">👥 12/50</td>
+                            <td class="text-center font-bold">10.302</td>
+                            <td class="text-center">
+                                <div class="prize-box">$50</div>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="text-center font-bold">12</td>
+                            <td>
+                                <div class="team-cell"><span class="icon-placeholder micro">👤</span><span
+                                        class="font-bold text-sm">Brader</span></div>
+                            </td>
+                            <td>
+                                <div class="team-cell"><img
+                                        src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=30&h=30&fit=crop"
+                                        class="p-avatar"><span>-olem</span></div>
+                            </td>
+                            <td class="text-center text-muted">—</td>
+                            <td class="text-center text-muted text-xs">Private</td>
+                            <td class="text-center text-muted text-xs">👥 16/50</td>
+                            <td class="text-center font-bold">10.276</td>
+                            <td class="text-center">
+                                <div class="prize-box">$50</div>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="text-center font-bold">13</td>
+                            <td>
+                                <div class="team-cell"><img
+                                        src="https://images.unsplash.com/photo-1552820728-8b83bb6b773f?w=30&h=30&fit=crop"
+                                        class="team-logo-small"><span class="font-bold text-sm">Kumpulan Pecinta Boy
+                                        (KPB)</span></div>
+                            </td>
+                            <td>
+                                <div class="team-cell"><img
+                                        src="https://images.unsplash.com/photo-1527980965255-d3b416303d12?w=30&h=30&fit=crop"
+                                        class="p-avatar"><span>Kainyckz-</span></div>
+                            </td>
+                            <td class="text-center"><img src="https://flagcdn.com/w20/id.png" class="flag-micro"></td>
+                            <td class="text-center text-muted text-xs">Private</td>
+                            <td class="text-center text-muted text-xs">👥 21/50</td>
+                            <td class="text-center font-bold">10.248</td>
+                            <td class="text-center">
+                                <div class="prize-box">$50</div>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="text-center font-bold">14</td>
+                            <td>
+                                <div class="team-cell"><span class="icon-placeholder micro text-orange">🔥</span><span
+                                        class="font-bold text-sm">ASBUN COUNTRY CLUB</span></div>
+                            </td>
+                            <td>
+                                <div class="team-cell"><img
+                                        src="https://images.unsplash.com/photo-1580489944761-15a19d654956?w=30&h=30&fit=crop"
+                                        class="p-avatar"><span>TeDBaRkeRR-</span></div>
+                            </td>
+                            <td class="text-center text-muted">—</td>
+                            <td class="text-center text-muted text-xs">Đơn đăng ký</td>
+                            <td class="text-center text-muted text-xs">👥 25/50</td>
+                            <td class="text-center font-bold">10.231</td>
+                            <td class="text-center">
+                                <div class="prize-box">$50</div>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="text-center font-bold">15</td>
+                            <td>
+                                <div class="team-cell"><span class="icon-placeholder micro text-orange">🔥</span><span
+                                        class="font-bold text-sm">MAESTRO</span></div>
+                            </td>
+                            <td>
+                                <div class="team-cell"><img
+                                        src="https://images.unsplash.com/photo-1599566150163-29194dcaad36?w=30&h=30&fit=crop"
+                                        class="p-avatar"><span>-nt1ng</span></div>
+                            </td>
+                            <td class="text-center"><img src="https://flagcdn.com/w20/kr.png" class="flag-micro"></td>
+                            <td class="text-center text-muted text-xs">Đơn đăng ký</td>
+                            <td class="text-center text-muted text-xs">👥 11/50</td>
+                            <td class="text-center font-bold">10.220</td>
+                            <td class="text-center">
+                                <div class="prize-box">$50</div>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="text-center font-bold">16</td>
+                            <td>
+                                <div class="team-cell"><span class="icon-placeholder micro">👤</span><span
+                                        class="font-bold text-sm">grg</span></div>
+                            </td>
+                            <td>
+                                <div class="team-cell"><img
+                                        src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=30&h=30&fit=crop"
+                                        class="p-avatar"><span>txo</span></div>
+                            </td>
+                            <td class="text-center text-muted">—</td>
+                            <td class="text-center text-muted text-xs">Đơn đăng ký</td>
+                            <td class="text-center text-muted text-xs">👥 3/50</td>
+                            <td class="text-center font-bold">10.211</td>
+                            <td class="text-center">
+                                <div class="prize-box">$50</div>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="text-center font-bold">17</td>
+                            <td>
+                                <div class="team-cell"><img
+                                        src="https://images.unsplash.com/photo-1614030424754-24d0eebd46ad?w=30&h=30&fit=crop"
+                                        class="team-logo-small"><span class="font-bold text-sm">Under Probation</span>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="team-cell"><img
+                                        src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=30&h=30&fit=crop"
+                                        class="p-avatar"><span>-Pai-</span></div>
+                            </td>
+                            <td class="text-center"><img src="https://flagcdn.com/w20/um.png" class="flag-micro"></td>
+                            <td class="text-center text-muted text-xs">Private</td>
+                            <td class="text-center text-muted text-xs">👥 16/50</td>
+                            <td class="text-center font-bold">10.151</td>
+                            <td class="text-center">
+                                <div class="prize-box">$50</div>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="text-center font-bold">18</td>
+                            <td>
+                                <div class="team-cell"><span class="icon-placeholder micro">👤</span><span
+                                        class="font-bold text-sm">Akatsuki</span></div>
+                            </td>
+                            <td>
+                                <div class="team-cell"><img
+                                        src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=30&h=30&fit=crop"
+                                        class="p-avatar"><span>zchun666</span></div>
+                            </td>
+                            <td class="text-center text-muted">—</td>
+                            <td class="text-center text-muted text-xs">Đơn đăng ký</td>
+                            <td class="text-center text-muted text-xs">👥 11/50</td>
+                            <td class="text-center font-bold">10.148</td>
+                            <td class="text-center">
+                                <div class="prize-box">$50</div>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="text-center font-bold">19</td>
+                            <td>
+                                <div class="team-cell"><img
+                                        src="https://images.unsplash.com/photo-1511512578047-dfb367046420?w=30&h=30&fit=crop"
+                                        class="team-logo-small"><span class="font-bold text-sm">SARANG DEWA</span></div>
+                            </td>
+                            <td>
+                                <div class="team-cell"><img
+                                        src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=30&h=30&fit=crop"
+                                        class="p-avatar"><span>jokowi</span></div>
+                            </td>
+                            <td class="text-center text-muted">—</td>
+                            <td class="text-center text-muted text-xs">Đơn đăng ký</td>
+                            <td class="text-center text-muted text-xs">👥 29/50</td>
+                            <td class="text-center font-bold">10.137</td>
+                            <td class="text-center">
+                                <div class="prize-box">$50</div>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="text-center font-bold">20</td>
+                            <td>
+                                <div class="team-cell"><span class="icon-placeholder micro text-orange">🔥</span><span
+                                        class="font-bold text-sm">IGNITE</span></div>
+                            </td>
+                            <td>
+                                <div class="team-cell"><img
+                                        src="https://images.unsplash.com/photo-1566577739112-5180d4bf9390?w=30&h=30&fit=crop"
+                                        class="p-avatar"><span>-naya366</span></div>
+                            </td>
+                            <td class="text-center"><img src="https://flagcdn.com/w20/id.png" class="flag-micro"></td>
+                            <td class="text-center text-muted text-xs">Đơn đăng ký</td>
+                            <td class="text-center text-muted text-xs">👥 40/50</td>
+                            <td class="text-center font-bold">10.126</td>
+                            <td class="text-center">
+                                <div class="prize-box">$50</div>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="text-center font-bold">21</td>
+                            <td>
+                                <div class="team-cell">
+                                    <span class="icon-placeholder micro">👑</span>
+                                    <span class="font-bold text-sm">Original Bundle</span>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="team-cell">
+                                    <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=30&h=30&fit=crop"
+                                        class="p-avatar">
+                                    <span>MyMainAccount</span>
+                                </div>
+                            </td>
+                            <td class="text-center text-muted">—</td>
+                            <td class="text-center text-muted text-xs">Đơn đăng ký</td>
+                            <td class="text-center text-muted text-xs">👥 6/50</td>
+                            <td class="text-center font-bold">10.105</td>
+                            <td class="text-center"></td>
+                        </tr>
+
+                        <tr>
+                            <td class="text-center font-bold">22</td>
+                            <td>
+                                <div class="team-cell">
+                                    <span class="icon-placeholder micro"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="team-cell"></div>
+                            </td>
+                            <td class="text-center text-muted"></td>
+                            <td class="text-center text-muted text-xs"></td>
+                            <td class="text-center text-muted text-xs"></td>
+                            <td class="text-center font-bold">10.104</td>
+                            <td class="text-center"></td>
+                        </tr>
+
+                        <tr>
+                            <td class="text-center font-bold">23</td>
+                            <td>
+                                <div class="team-cell">
+                                    <img src="https://images.unsplash.com/photo-1542751371-adc38448a05e?w=30&h=30&fit=crop"
+                                        class="team-logo-small">
+                                    <span class="font-bold text-sm">Bocot Squad</span>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="team-cell">
+                                    <img src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=30&h=30&fit=crop"
+                                        class="p-avatar">
+                                    <span>yft-</span>
+                                </div>
+                            </td>
+                            <td class="text-center text-muted">—</td>
+                            <td class="text-center text-muted text-xs">Đơn đăng ký</td>
+                            <td class="text-center text-muted text-xs">👥 49/50</td>
+                            <td class="text-center font-bold">10.100</td>
+                            <td class="text-center"></td>
+                        </tr>
+
+                        <tr>
+                            <td class="text-center font-bold">24</td>
+                            <td>
+                                <div class="team-cell">
+                                    <img src="https://images.unsplash.com/photo-1552820728-8b83bb6b773f?w=30&h=30&fit=crop"
+                                        class="team-logo-small">
+                                    <span class="font-bold text-sm">SlowAimers X</span>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="team-cell">
+                                    <img src="https://images.unsplash.com/photo-1527980965255-d3b416303d12?w=30&h=30&fit=crop"
+                                        class="p-avatar">
+                                    <span>joke_R</span>
+                                </div>
+                            </td>
+                            <td class="text-center text-muted">—</td>
+                            <td class="text-center text-muted text-xs">Đơn đăng ký</td>
+                            <td class="text-center text-muted text-xs">👥 48/50</td>
+                            <td class="text-center font-bold">10.096</td>
+                            <td class="text-center"></td>
+                        </tr>
+
+                        <tr>
+                            <td class="text-center font-bold">25</td>
+                            <td>
+                                <div class="team-cell">
+                                    <span class="icon-placeholder micro">👤</span>
+                                    <span class="font-bold text-sm">random playboys</span>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="team-cell">
+                                    <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?w=30&h=30&fit=crop"
+                                        class="p-avatar">
+                                    <span>mentalplay</span>
+                                </div>
+                            </td>
+                            <td class="text-center text-muted">—</td>
+                            <td class="text-center text-muted text-xs">Private</td>
+                            <td class="text-center text-muted text-xs">👥 4/50</td>
+                            <td class="text-center font-bold">10.088</td>
+                            <td class="text-center"></td>
+                        </tr>
+
+                    </tbody>
+                </table>
+
+                <div id="load-more-trigger" class="loading-container">
+                    <div class="spinner"></div>
+                    <span>Đang tải thêm câu lạc bộ...</span>
+                </div>
+
+            </div>
+
+        </main>
+
+        <aside class="right-sidebar">
+            <div class="right-nav">
+                <a href="#" class="r-icon">VS</a>
+                <a href="#" class="r-icon">🔔</a>
+                <a href="#" class="r-icon">👥</a>
+                <a href="#" class="r-icon">💬</a>
+                <a href="#" class="r-icon">⊕</a>
+            </div>
+        </aside>
+    </div>
+
+</body>
+
+</html>
