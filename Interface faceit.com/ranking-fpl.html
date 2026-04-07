@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FACEIT - FPL Rankings</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="dashboard.css">
+    <link rel="stylesheet" href="fpl.css">
+</head>
+
+<body class="dashboard-body">
+
+    <div class="top-promo-banner theme-green">
+        <span>✈️ Run FACEIT directly from your desktop!</span>
+        <button class="btn-promo">TẢI XUỐNG</button>
+        <span class="close-promo">✕</span>
+    </div>
+
+    <div class="dashboard-layout">
+        <aside class="left-sidebar">
+            <div class="sidebar-header">
+                <div class="logo">FACE<span>I</span>T</div>
+            </div>
+            <div class="sidebar-search">
+                <span class="search-icon">🔍</span>
+                <input type="text" placeholder="Tìm kiếm">
+            </div>
+            <nav class="sidebar-nav">
+                <a href="#" class="nav-link"><span class="icon">👥</span> Party Finder</a>
+                <a href="#" class="nav-link"><span class="icon">▶</span> Chơi</a>
+                <a href="#" class="nav-link active"><span class="icon">📊</span> Xếp hạng</a>
+                <a href="#" class="nav-link"><span class="icon">📈</span> Track</a>
+                <a href="#" class="nav-link"><span class="icon">📺</span> Watch</a>
+                <a href="#" class="nav-link"><span class="icon">📰</span> Nguồn cấp dữ liệu</a>
+            </nav>
+            <div class="sidebar-section">
+                <a href="#" class="nav-link"><span class="icon">🛡️</span> Clubs</a>
+                <a href="#" class="nav-link"><span class="icon">⊕</span> Create a Club</a>
+            </div>
+            <div class="sidebar-bottom">
+                <a href="#" class="nav-link"><span class="icon">🎯</span> Nhiệm vụ</a>
+                <a href="#" class="nav-link"><span class="icon">🛒</span> Cửa hàng</a>
+                <a href="#" class="nav-link highlight-green"><span class="icon">⭐</span> Nâng cấp</a>
+            </div>
+        </aside>
+
+        <main class="dashboard-main fpl-page">
+
+            <div class="play-header-top">
+                <div class="game-info-wrapper">
+                    <img src="https://images.unsplash.com/photo-1542751371-adc38448a05e?w=50&q=80" alt="CS2"
+                        class="game-icon-small">
+                    <span class="dots">•••</span>
+                    <span class="text-muted text-xs font-bold">SEA</span>
+                </div>
+                <div class="ranking-tabs-main">
+                    <a href="#" class="r-tab-main">GHÉP TRẬN</a>
+                    <a href="#" class="r-tab-main active">FPL</a>
+                    <a href="#" class="r-tab-main">CLUBS</a>
+                </div>
+            </div>
+
+            <div class="fpl-header mt-20">
+                <h2>FPL CS2 Mùa giải 7</h2>
+
+                <div class="filter-group">
+                    <select class="filter-select">
+                        <option value="s7" selected>Season 7</option>
+                        <option value="s6">Season 6</option>
+                        <option value="s5">Season 5</option>
+                        <option value="s4">Season 4</option>
+                    </select>
+
+                    <select class="filter-select">
+                        <option value="eu" selected>FPL Europe</option>
+                        <option value="me">FPL Middle East</option>
+                        <option value="na">FPL North America</option>
+                        <option value="sa">FPL South America</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="fpl-content-split mt-20">
+
+                <div class="fpl-table-container table-responsive">
+                    <table class="stats-table fpl-table">
+                        <thead>
+                            <tr>
+                                <th class="text-center">Xếp hạng</th>
+                                <th>Người chơi</th>
+                                <th class="text-center">Quốc gia</th>
+                                <th class="text-center">Pro Alias</th>
+                                <th class="text-center">Đội</th>
+                                <th class="text-center">FPL Points</th>
+                                <th class="text-right">Giải thưởng</th>
+                            </tr>
+                        </thead>
+                        <tbody id="fpl-tbody">
+                            <tr class="top-rank-row">
+                                <td class="text-center font-bold text-white">1</td>
+                                <td>
+                                    <div class="player-info-cell">
+                                        <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=40&h=40&fit=crop"
+                                            alt="p" class="p-avatar">
+                                        <span class="player-name">h4RN1zanami <span
+                                                class="verified-icon">✔️</span></span>
+                                    </div>
+                                </td>
+                                <td class="text-center"><img src="https://flagcdn.com/w20/bg.png" alt="BG"
+                                        class="flag-icon"></td>
+                                <td class="text-center text-muted">h4rnxy</td>
+                                <td class="text-center text-muted">-</td>
+                                <td class="text-center font-bold">111</td>
+                                <td class="text-right font-bold text-white">$7,500</td>
+                            </tr>
+                            <tr class="top-rank-row">
+                                <td class="text-center font-bold text-white">2</td>
+                                <td>
+                                    <div class="player-info-cell">
+                                        <img src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=40&h=40&fit=crop"
+                                            alt="p" class="p-avatar">
+                                        <span class="player-name">Dytor <span class="verified-icon">✔️</span></span>
+                                    </div>
+                                </td>
+                                <td class="text-center"><img src="https://flagcdn.com/w20/cz.png" alt="CZ"
+                                        class="flag-icon"></td>
+                                <td class="text-center text-muted">Dytor</td>
+                                <td class="text-center text-muted">-</td>
+                                <td class="text-center font-bold">102</td>
+                                <td class="text-right font-bold text-white">$5,000</td>
+                            </tr>
+                            <tr class="top-rank-row">
+                                <td class="text-center font-bold text-white">3</td>
+                                <td>
+                                    <div class="player-info-cell">
+                                        <img src="https://images.unsplash.com/photo-1527980965255-d3b416303d12?w=40&h=40&fit=crop"
+                                            alt="p" class="p-avatar">
+                                        <span class="player-name">aidKiT <span class="verified-icon">✔️</span></span>
+                                    </div>
+                                </td>
+                                <td class="text-center"><img src="https://flagcdn.com/w20/mk.png" alt="MK"
+                                        class="flag-icon"></td>
+                                <td class="text-center text-muted">-</td>
+                                <td class="text-center text-muted">-</td>
+                                <td class="text-center font-bold">100</td>
+                                <td class="text-right font-bold text-white">$3,750</td>
+                            </tr>
+
+                            <tr>
+                                <td class="text-center font-bold">4</td>
+                                <td>
+                                    <div class="player-info-cell">
+                                        <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?w=40&h=40&fit=crop"
+                                            alt="p" class="p-avatar grayscale">
+                                        <span class="player-name">Sowalio <span class="verified-icon">✔️</span></span>
+                                    </div>
+                                </td>
+                                <td class="text-center"><img src="https://flagcdn.com/w20/ru.png" alt="RU"
+                                        class="flag-icon"></td>
+                                <td class="text-center text-muted">-</td>
+                                <td class="text-center text-muted">-</td>
+                                <td class="text-center font-bold">95</td>
+                                <td class="text-right font-bold">$2,500</td>
+                            </tr>
+                            <tr>
+                                <td class="text-center font-bold">5</td>
+                                <td>
+                                    <div class="player-info-cell">
+                                        <img src="https://images.unsplash.com/photo-1599566150163-29194dcaad36?w=40&h=40&fit=crop"
+                                            alt="p" class="p-avatar grayscale">
+                                        <span class="player-name">REDS7AR <span class="verified-icon">✔️</span></span>
+                                    </div>
+                                </td>
+                                <td class="text-center"><img src="https://flagcdn.com/w20/ru.png" alt="RU"
+                                        class="flag-icon"></td>
+                                <td class="text-center text-muted">REDS7AR</td>
+                                <td class="text-center text-muted">-</td>
+                                <td class="text-center font-bold">86</td>
+                                <td class="text-right font-bold">$2,500</td>
+                            </tr>
+                            <tr>
+                                <td class="text-center font-bold">6</td>
+                                <td>
+                                    <div class="player-info-cell">
+                                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=40&h=40&fit=crop"
+                                            alt="p" class="p-avatar grayscale">
+                                        <span class="player-name">-SYPH0 <span class="verified-icon">✔️</span></span>
+                                    </div>
+                                </td>
+                                <td class="text-center"><img src="https://flagcdn.com/w20/kz.png" alt="KZ"
+                                        class="flag-icon"></td>
+                                <td class="text-center text-muted">syph0</td>
+                                <td class="text-center font-bold">Spirit Academy</td>
+                                <td class="text-center font-bold">72</td>
+                                <td class="text-right font-bold">$2,000</td>
+                            </tr>
+                            <tr>
+                                <td class="text-center font-bold">7</td>
+                                <td>
+                                    <div class="player-info-cell">
+                                        <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=40&h=40&fit=crop"
+                                            alt="p" class="p-avatar grayscale">
+                                        <span class="player-name">Ryujin <span class="verified-icon">✔️</span></span>
+                                    </div>
+                                </td>
+                                <td class="text-center"><img src="https://flagcdn.com/w20/uz.png" alt="UZ"
+                                        class="flag-icon"></td>
+                                <td class="text-center text-muted">Ryujin</td>
+                                <td class="text-center text-muted">-</td>
+                                <td class="text-center font-bold">55</td>
+                                <td class="text-right font-bold">$2,000</td>
+                            </tr>
+                            <tr>
+                                <td class="text-center font-bold">8</td>
+                                <td>
+                                    <div class="player-info-cell">
+                                        <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=40&h=40&fit=crop"
+                                            alt="p" class="p-avatar grayscale">
+                                        <span class="player-name">swetsi7 <span class="verified-icon">✔️</span></span>
+                                    </div>
+                                </td>
+                                <td class="text-center"><img src="https://flagcdn.com/w20/ru.png" alt="RU"
+                                        class="flag-icon"></td>
+                                <td class="text-center text-muted">-</td>
+                                <td class="text-center text-muted">-</td>
+                                <td class="text-center font-bold">52</td>
+                                <td class="text-right font-bold">$1,750</td>
+                            </tr>
+                            <tr>
+                                <td class="text-center font-bold">9</td>
+                                <td>
+                                    <div class="player-info-cell">
+                                        <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=40&h=40&fit=crop"
+                                            alt="p" class="p-avatar grayscale">
+                                        <span class="player-name">bibu_ <span class="verified-icon">✔️</span></span>
+                                    </div>
+                                </td>
+                                <td class="text-center"><img src="https://flagcdn.com/w20/it.png" alt="IT"
+                                        class="flag-icon"></td>
+                                <td class="text-center text-muted">bibu_</td>
+                                <td class="text-center text-muted">-</td>
+                                <td class="text-center font-bold">49</td>
+                                <td class="text-right font-bold">$1,500</td>
+                            </tr>
+                            <tr>
+                                <td class="text-center font-bold">10</td>
+                                <td>
+                                    <div class="player-info-cell">
+                                        <img src="https://images.unsplash.com/photo-1566577739112-5180d4bf9390?w=40&h=40&fit=crop"
+                                            alt="p" class="p-avatar grayscale">
+                                        <span class="player-name">-khaN <span class="verified-icon">✔️</span></span>
+                                    </div>
+                                </td>
+                                <td class="text-center"><img src="https://flagcdn.com/w20/th.png" alt="TH"
+                                        class="flag-icon"></td>
+                                <td class="text-center text-muted">khaN</td>
+                                <td class="text-center font-bold">Nemiga</td>
+                                <td class="text-center font-bold">48</td>
+                                <td class="text-right font-bold">$1,500</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <div id="load-more-trigger" class="loading-container">
+                        <div class="spinner"></div>
+                        <span>Đang tải thêm người chơi...</span>
+                    </div>
+
+                </div>
+
+                <aside class="fpl-sidebar">
+                    <h3 class="about-title">About FPL <span class="text-green">⬡</span></h3>
+
+                    <div class="accordion-group">
+                        <details class="acc-item" open>
+                            <summary class="acc-header">What is the FPL?</summary>
+                            <div class="acc-body">
+                                <p>FPL is an in-house league system where top players and selected new talents compete
+                                    in private solo-queue matchmaking to train, network and stream all-star content.</p>
+                            </div>
+                        </details>
+
+                        <details class="acc-item">
+                            <summary class="acc-header">When is FPL?</summary>
+                            <div class="acc-body">
+                                <p>FPL seasons run continuously with structured scheduling to ensure maximum
+                                    participation from pro players.</p>
+                            </div>
+                        </details>
+
+                        <details class="acc-item">
+                            <summary class="acc-header">How do I qualify?</summary>
+                            <div class="acc-body">
+                                <p>Players can qualify by reaching the top of the FPL Challenger rankings or through
+                                    direct invitations based on professional performance.</p>
+                            </div>
+                        </details>
+                    </div>
+
+                    <div class="fpl-ad-box mt-20">
+                        <div class="ad-top-row">
+                            <span class="text-xs text-muted">Quảng cáo</span>
+                            <span class="text-green text-xs font-bold pointer">REMOVE ADS</span>
+                        </div>
+                        <h4 class="mt-10 text-sm">Go premium</h4>
+                        <p class="text-xs text-muted mt-5">Get an ad-free experience, instantly unlock Super Matches,
+                            Match highlights and more.</p>
+                    </div>
+                </aside>
+
+            </div>
+
+        </main>
+
+        <aside class="right-sidebar">
+            <div class="right-nav">
+                <a href="#" class="r-icon">VS</a>
+                <a href="#" class="r-icon">🔔</a>
+                <a href="#" class="r-icon">👥</a>
+                <a href="#" class="r-icon">💬</a>
+                <a href="#" class="r-icon">⊕</a>
+            </div>
+        </aside>
+    </div>
+
+</body>
+
+</html>
