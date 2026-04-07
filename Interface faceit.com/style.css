@@ -2802,3 +2802,276 @@ footer {
     color: var(--text-muted);
     font-weight: 700;
 }
+
+/* ranking.html */
+
+.ranking-header-top {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 0;
+    margin-bottom: 20px;
+}
+
+.game-info-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding-bottom: 15px;
+    margin-right: 40px;
+}
+
+.game-info-wrapper .game-icon-small {
+    width: 36px;
+    height: 36px;
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+}
+
+.game-info-wrapper .dots {
+    color: var(--text-muted);
+    font-size: 16px;
+    letter-spacing: 2px;
+}
+
+.ranking-tabs-main {
+    display: flex;
+    gap: 30px;
+    height: 100%;
+    align-items: flex-end;
+    flex: 1;
+}
+
+.r-tab-main {
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    padding-bottom: 15px;
+    position: relative;
+    text-decoration: none;
+}
+
+.r-tab-main:hover {
+    color: var(--text-main);
+}
+
+.r-tab-main.active {
+    color: var(--text-main);
+}
+
+.r-tab-main.active::after {
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: var(--accent);
+}
+
+.ranking-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.ranking-controls h3 {
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--text-main);
+}
+
+.filter-group {
+    display: flex;
+    gap: 15px;
+}
+
+.filter-select {
+    background-color: var(--bg-card);
+    border: 1px solid var(--border-color);
+    color: var(--text-main);
+    padding: 8px 30px 8px 15px;
+    border-radius: 4px;
+    font-size: 12px;
+    appearance: none;
+    background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%238b9bb4%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E");
+    background-repeat: no-repeat;
+    background-position: right 10px top 50%;
+    background-size: 8px auto;
+    min-width: 150px;
+    cursor: pointer;
+    outline: none;
+}
+
+.filter-select:hover {
+    border-color: var(--text-muted);
+}
+
+/* Table Overrides */
+.ranking-table th {
+    font-size: 11px;
+    padding-bottom: 15px;
+    color: var(--text-muted);
+}
+
+.ranking-table td {
+    padding: 15px 10px;
+    vertical-align: middle;
+    color: var(--text-main);
+}
+
+.text-right {
+    text-align: right !important;
+}
+
+.text-center {
+    text-align: center !important;
+}
+
+.rank-num {
+    font-size: 14px;
+    font-weight: 800;
+    width: 40px;
+}
+
+.player-info-cell {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.player-avatar-wrapper {
+    position: relative;
+    width: 48px;
+    height: 48px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border: 1px solid var(--border-color);
+}
+
+/* Giả lập hình nền của avatar giống trong ảnh */
+.bg-1 {
+    background: url('https://images.unsplash.com/photo-1614030424754-24d0eebd46ad?w=100&q=80') center/cover;
+}
+
+.bg-2 {
+    background: url('https://images.unsplash.com/photo-1542751371-adc38448a05e?w=100&q=80') center/cover;
+}
+
+.bg-3 {
+    background: url('https://images.unsplash.com/photo-1552820728-8b83bb6b773f?w=100&q=80') center/cover;
+}
+
+.player-avatar-wrapper img {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    border: 2px solid var(--bg-secondary);
+    position: relative;
+    z-index: 2;
+}
+
+.status-dot {
+    position: absolute;
+    top: 4px;
+    right: 4px;
+    width: 8px;
+    height: 8px;
+    background: #ff5500;
+    border-radius: 50%;
+    z-index: 3;
+    border: 2px solid var(--bg-secondary);
+}
+
+.player-name {
+    font-size: 13px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.verified-icon {
+    color: #eab308;
+    font-size: 12px;
+}
+
+.flag-cell img {
+    width: 20px;
+    border-radius: 2px;
+}
+
+.skill-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: 800;
+    color: #000;
+}
+
+.badge-gold {
+    background: linear-gradient(135deg, #fbbf24 0%, #d97706 100%);
+}
+
+.badge-silver {
+    background: linear-gradient(135deg, #e2e8f0 0%, #94a3b8 100%);
+}
+
+.badge-bronze {
+    background: linear-gradient(135deg, #f87171 0%, #b91c1c 100%);
+    color: #fff;
+}
+
+.badge-red {
+    background: linear-gradient(135deg, #ef4444 0%, #991b1b 100%);
+    color: #fff;
+}
+
+.badge-green {
+    background: linear-gradient(135deg, var(--accent) 0%, #009955 100%);
+    color: #000;
+}
+
+.elo-num {
+    font-size: 13px;
+    font-weight: 700;
+}
+
+/* Loading Spinner Container cho JS sau này */
+.loading-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 0;
+    gap: 15px;
+    color: var(--text-muted);
+    font-size: 13px;
+}
+
+.spinner {
+    width: 30px;
+    height: 30px;
+    border: 3px solid var(--border-color);
+    border-top-color: var(--accent);
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
