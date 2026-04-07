@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Match Statistics</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">FACE<span>I</span>T</div>
+        <div class="header-actions">
+            <span class="search-icon">🔍 TÌM KIẾM</span>
+            <a href="#" class="header-link">TẢI XUỐNG ỨNG DỤNG</a>
+            <button class="btn-primary">TẠO TÀI KHOẢN</button>
+            <button class="btn-secondary">ĐĂNG NHẬP</button>
+        </div>
+    </header>
+
+    <main class="match-container">
+        <div class="match-sub-header">
+            <h2>Phòng ghép trận</h2>
+            <div class="match-tabs">
+                <a href="#" class="tab-item">TỔNG QUAN</a>
+                <a href="#" class="tab-item active">THỐNG KÊ</a>
+            </div>
+            <div class="match-actions">
+                <span class="icon">🔗</span>
+            </div>
+        </div>
+
+        <section class="scoreboard">
+            <div class="team team-left">
+                <span class="team-name">team_fuc_sram</span>
+                <img src="https://images.unsplash.com/photo-1511512578047-dfb367046420?w=50&h=50&fit=crop" alt="Team 1"
+                    class="team-logo">
+            </div>
+
+            <div class="match-center-info">
+                <div class="match-scores">
+                    <span class="score score-lose">5</span>
+
+                    <div class="match-status">
+                        <span class="mode">5v5 - SEA</span>
+                        <span class="status-text">Đã kết thúc</span>
+                        <span class="best-of">Tốt nhất trong 1</span>
+
+                        <div class="team-balance-tooltip">
+                            <div class="tooltip-header">Team balance</div>
+                            <div class="tooltip-row">
+                                <span class="val">50%</span>
+                                <span class="lbl">Win probability</span>
+                                <span class="val">50%</span>
+                            </div>
+                            <div class="tooltip-row">
+                                <span class="lvl-icon lvl-green">2</span>
+                                <span class="lbl">Avg skill level</span>
+                                <span class="lvl-icon lvl-green">2</span>
+                            </div>
+                            <a href="#" class="tooltip-link">TÌM HIỂU THÊM</a>
+                        </div>
+                    </div>
+
+                    <span class="score score-win">13</span>
+                </div>
+                <div class="match-badges">
+                    <span class="badge badge-super">⭐ Super Match</span>
+                    <span class="badge badge-veteran">🛡️ Veteran</span>
+                </div>
+            </div>
+
+            <div class="team team-right">
+                <img src="https://images.unsplash.com/photo-1552820728-8b83bb6b773f?w=50&h=50&fit=crop" alt="Team 2"
+                    class="team-logo">
+                <span class="team-name">team_CS2_001</span>
+            </div>
+        </section>
+
+        <div class="map-progress">
+            <div class="progress-line"></div>
+            <div class="map-icon">O</div>
+        </div>
+
+        <div class="ad-banner">
+            <img src="https://images.unsplash.com/photo-1605901309584-818e25960b8f?w=800&h=100&fit=crop" alt="Ad">
+            <span class="remove-ads">REMOVE ADS</span>
+        </div>
+
+        <div class="stats-nav">
+            <a href="#" class="nav-item active">TÓM TẮT</a>
+            <a href="#" class="nav-item">DUELS</a>
+            <a href="#" class="nav-item">UTILITY</a>
+        </div>
+
+        <section class="mvp-section">
+            <div class="mvp-card-main">
+                <div class="mvp-title">⭐ MVP</div>
+                <div class="mvp-content">
+                    <div class="mvp-player">
+                        <img src="https://images.unsplash.com/photo-1566577739112-5180d4bf9390?w=100&h=100&fit=crop"
+                            alt="MVP" class="mvp-avatar">
+                        <div class="mvp-name-level">
+                            <h3>CS2_001</h3>
+                            <span class="lvl-icon lvl-green">3</span> <span class="elo">770</span>
+                        </div>
+                    </div>
+                    <div class="mvp-stats-grid">
+                        <div class="stat-box">
+                            <span class="stat-val">23.98</span>
+                            <span class="stat-lbl">RWS</span>
+                        </div>
+                        <div class="stat-box">
+                            <span class="stat-val">134.1</span>
+                            <span class="stat-lbl">ADR</span>
+                        </div>
+                        <div class="stat-box">
+                            <span class="stat-val">30/8/2</span>
+                            <span class="stat-lbl">K/D/A</span>
+                        </div>
+                        <div class="stat-box">
+                            <span class="stat-val">53.3%</span>
+                            <span class="stat-lbl">Headshot %</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="mvp-footer">
+                    <span class="locked-icon">🔒 Highlight locked</span>
+                </div>
+            </div>
+
+            <div class="top-stats-cards">
+                <div class="top-stat-card">
+                    <div class="top-stat-player">
+                        <img src="https://images.unsplash.com/photo-1566577739112-5180d4bf9390?w=40&h=40&fit=crop"
+                            alt="P">
+                        <span>CS2_001</span>
+                    </div>
+                    <div class="top-stat-val">
+                        <div class="val">30</div>
+                        <div class="lbl">Most kills</div>
+                    </div>
+                </div>
+                <div class="top-stat-card">
+                    <div class="top-stat-player">
+                        <img src="https://images.unsplash.com/photo-1566577739112-5180d4bf9390?w=40&h=40&fit=crop"
+                            alt="P">
+                        <span>CS2_001</span>
+                    </div>
+                    <div class="top-stat-val">
+                        <div class="val">2414</div>
+                        <div class="lbl">Most damage</div>
+                    </div>
+                </div>
+                <div class="top-stat-card">
+                    <div class="top-stat-player">
+                        <img src="https://images.unsplash.com/photo-1566577739112-5180d4bf9390?w=40&h=40&fit=crop"
+                            alt="P">
+                        <span>CS2_001</span>
+                    </div>
+                    <div class="top-stat-val">
+                        <div class="val">88.9%</div>
+                        <div class="lbl">KAST</div>
+                    </div>
+                </div>
+                <div class="top-stat-card">
+                    <div class="top-stat-player">
+                        <img src="https://images.unsplash.com/photo-1566577739112-5180d4bf9390?w=40&h=40&fit=crop"
+                            alt="P">
+                        <span>CS2_001</span>
+                    </div>
+                    <div class="top-stat-val">
+                        <div class="val">3</div>
+                        <div class="lbl">First kills</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="table-controls">
+            <div class="table-tabs">
+                <a href="#" class="t-tab active">Chung</a>
+                <a href="#" class="t-tab">Advanced</a>
+                <a href="#" class="t-tab">Entry</a>
+                <a href="#" class="t-tab">Trade</a>
+                <a href="#" class="t-tab">Clutch</a>
+            </div>
+            <div class="table-filters">
+                <span class="f-lbl">Sort by team</span>
+                <span class="f-lbl active">Sort by players</span>
+                <span class="f-tab active">Tất cả</span>
+                <span class="f-tab">T</span>
+                <span class="f-tab">CT</span>
+                <div class="view-toggles">
+                    <button class="btn-icon active">☰</button>
+                    <button class="btn-icon">⊟</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="team-table-header">
+            <div class="t-info">
+                <span class="t-score score-lose">5</span>
+                <img src="https://images.unsplash.com/photo-1511512578047-dfb367046420?w=30&h=30&fit=crop" alt="T1">
+                <span class="t-name">team_fuc_sram</span>
+            </div>
+            <div class="t-meta">
+                <span>Team avg <span class="lvl-icon lvl-green">2</span> 570</span>
+                <span>First half 4</span>
+                <span>Second half 1</span>
+            </div>
+        </div>
+        <div class="table-responsive">
+            <table class="stats-table">
+                <thead>
+                    <tr>
+                        <th>Người Chơi</th>
+                        <th>Xếp Hạng</th>
+                        <th>RWS ⌄</th>
+                        <th>K</th>
+                        <th>D</th>
+                        <th>A</th>
+                        <th>ADR</th>
+                        <th>K/D</th>
+                        <th>K/R</th>
+                        <th>HS</th>
+                        <th>HS %</th>
+                        <th>5k</th>
+                        <th>4k</th>
+                        <th>3k</th>
+                        <th>2k</th>
+                        <th>MVPs</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="player-cell"><img
+                                src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=30&h=30&fit=crop"
+                                alt="p"> Broomis</td>
+                        <td><span class="lvl-icon lvl-green">3</span> 793</td>
+                        <td class="text-muted">6.64</td>
+                        <td>11</td>
+                        <td>14</td>
+                        <td>7</td>
+                        <td>87.7</td>
+                        <td>0.79</td>
+                        <td>0.61</td>
+                        <td>6</td>
+                        <td>54.5%</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>3</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td class="player-cell"><img
+                                src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=30&h=30&fit=crop"
+                                alt="p"> smoothieglow</td>
+                        <td><span class="lvl-icon lvl-green">2</span> 623</td>
+                        <td class="text-muted">5.93</td>
+                        <td>17</td>
+                        <td>13</td>
+                        <td>3</td>
+                        <td>95.5</td>
+                        <td>1.31</td>
+                        <td>0.94</td>
+                        <td>9</td>
+                        <td>52.9%</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>3</td>
+                        <td>2</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td class="player-cell"><img
+                                src="https://images.unsplash.com/photo-1527980965255-d3b416303d12?w=30&h=30&fit=crop"
+                                alt="p"> yogurt05</td>
+                        <td><span class="lvl-icon lvl-green">2</span> 684</td>
+                        <td class="text-muted">5.51</td>
+                        <td>10</td>
+                        <td>18</td>
+                        <td>3</td>
+                        <td>75.2</td>
+                        <td>0.56</td>
+                        <td>0.56</td>
+                        <td>3</td>
+                        <td>30.0%</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>1</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td class="player-cell"><img
+                                src="https://images.unsplash.com/photo-1580489944761-15a19d654956?w=30&h=30&fit=crop"
+                                alt="p"> fuc_sram</td>
+                        <td><span class="lvl-icon lvl-gray">1</span> 409</td>
+                        <td class="text-muted">5.27</td>
+                        <td>8</td>
+                        <td>16</td>
+                        <td>5</td>
+                        <td>66.4</td>
+                        <td>0.50</td>
+                        <td>0.44</td>
+                        <td>2</td>
+                        <td>25.0%</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>2</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td class="player-cell"><img
+                                src="https://images.unsplash.com/photo-1599566150163-29194dcaad36?w=30&h=30&fit=crop"
+                                alt="p"> CanSauDo</td>
+                        <td><span class="lvl-icon lvl-gray">1</span> 341</td>
+                        <td class="text-muted">4.42</td>
+                        <td>12</td>
+                        <td>17</td>
+                        <td>3</td>
+                        <td>64.4</td>
+                        <td>0.71</td>
+                        <td>0.67</td>
+                        <td>5</td>
+                        <td>41.7%</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>1</td>
+                        <td>0</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="team-table-header mt-40">
+            <div class="t-info">
+                <span class="t-score score-win">13</span>
+                <img src="https://images.unsplash.com/photo-1552820728-8b83bb6b773f?w=30&h=30&fit=crop" alt="T2">
+                <span class="t-name">team_CS2_001</span>
+            </div>
+            <div class="t-meta">
+                <span>Team avg <span class="lvl-icon lvl-green">2</span> 624</span>
+                <span>First half 8</span>
+                <span>Second half 5</span>
+            </div>
+        </div>
+        <div class="table-responsive">
+            <table class="stats-table">
+                <thead>
+                    <tr>
+                        <th>Người Chơi</th>
+                        <th>Xếp Hạng</th>
+                        <th>RWS ⌄</th>
+                        <th>K</th>
+                        <th>D</th>
+                        <th>A</th>
+                        <th>ADR</th>
+                        <th>K/D</th>
+                        <th>K/R</th>
+                        <th>HS</th>
+                        <th>HS %</th>
+                        <th>5k</th>
+                        <th>4k</th>
+                        <th>3k</th>
+                        <th>2k</th>
+                        <th>MVPs</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="player-cell"><img
+                                src="https://images.unsplash.com/photo-1566577739112-5180d4bf9390?w=30&h=30&fit=crop"
+                                alt="p"> CS2_001</td>
+                        <td><span class="lvl-icon lvl-green">3</span> 770</td>
+                        <td class="text-muted">23.98</td>
+                        <td>30</td>
+                        <td>8</td>
+                        <td>2</td>
+                        <td>134.1</td>
+                        <td>3.75</td>
+                        <td>1.67</td>
+                        <td>16</td>
+                        <td>53.3%</td>
+                        <td>0</td>
+                        <td>1</td>
+                        <td>3</td>
+                        <td>6</td>
+                        <td>8</td>
+                    </tr>
+                    <tr>
+                        <td class="player-cell"><img
+                                src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=30&h=30&fit=crop"
+                                alt="p"> LeGrandV</td>
+                        <td><span class="lvl-icon lvl-green">2</span> 693</td>
+                        <td class="text-muted">15.72</td>
+                        <td>13</td>
+                        <td>10</td>
+                        <td>8</td>
+                        <td>96.3</td>
+                        <td>1.30</td>
+                        <td>0.72</td>
+                        <td>9</td>
+                        <td>69.2%</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>2</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td class="player-cell"><img
+                                src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=30&h=30&fit=crop"
+                                alt="p"> MnDPrsm</td>
+                        <td><span class="lvl-icon lvl-green">2</span> 691</td>
+                        <td class="text-muted">13.56</td>
+                        <td>10</td>
+                        <td>16</td>
+                        <td>14</td>
+                        <td>94.2</td>
+                        <td>0.63</td>
+                        <td>0.56</td>
+                        <td>4</td>
+                        <td>40.0%</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>1</td>
+                        <td>0</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td class="player-cell"><img
+                                src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=30&h=30&fit=crop"
+                                alt="p"> H0gNa</td>
+                        <td><span class="lvl-icon lvl-green">2</span> 596</td>
+                        <td class="text-muted">11.66</td>
+                        <td>12</td>
+                        <td>8</td>
+                        <td>4</td>
+                        <td>60.1</td>
+                        <td>1.50</td>
+                        <td>0.67</td>
+                        <td>5</td>
+                        <td>41.7%</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>1</td>
+                        <td>0</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td class="player-cell"><img
+                                src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=30&h=30&fit=crop"
+                                alt="p"> eXtify_11</td>
+                        <td><span class="lvl-icon lvl-gray">1</span> 371</td>
+                        <td class="text-muted">7.30</td>
+                        <td>12</td>
+                        <td>16</td>
+                        <td>4</td>
+                        <td>52.1</td>
+                        <td>0.75</td>
+                        <td>0.67</td>
+                        <td>4</td>
+                        <td>33.3%</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>2</td>
+                        <td>1</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <section class="highlights-section mt-40">
+            <h3>Match highlights</h3>
+            <div class="highlights-grid">
+                <div class="hl-card main-hl">
+                    <img src="https://images.unsplash.com/photo-1542751371-adc38448a05e?w=200&h=300&fit=crop" alt="CS2">
+                    <div class="hl-content">
+                        <h4>Relive the hype with Highlights</h4>
+                        <button class="btn-primary">NÂNG CẤP</button>
+                    </div>
+                </div>
+                <div class="hl-card locked">
+                    <div class="hl-top">Highlight locked</div>
+                    <div class="hl-bottom">
+                        <img src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=30&h=30&fit=crop"
+                            alt="p">
+                        <span>smoothieglow</span>
+                        <span class="lock-icon">🔒</span>
+                    </div>
+                </div>
+                <div class="hl-card locked">
+                    <div class="hl-top">Highlight locked</div>
+                    <div class="hl-bottom">
+                        <img src="https://images.unsplash.com/photo-1599566150163-29194dcaad36?w=30&h=30&fit=crop"
+                            alt="p">
+                        <span>CanSauDo</span>
+                        <span class="lock-icon">🔒</span>
+                    </div>
+                </div>
+                <div class="hl-card locked">
+                    <div class="hl-top">Highlight locked</div>
+                    <div class="hl-bottom">
+                        <img src="https://images.unsplash.com/photo-1527980965255-d3b416303d12?w=30&h=30&fit=crop"
+                            alt="p">
+                        <span>yogurt05</span>
+                        <span class="lock-icon">🔒</span>
+                    </div>
+                </div>
+                <div class="hl-card locked">
+                    <div class="hl-top">Highlight locked</div>
+                    <div class="hl-bottom">
+                        <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=30&h=30&fit=crop"
+                            alt="p">
+                        <span>Broomis</span>
+                        <span class="lock-icon">🔒</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+</body>
+
+</html>
