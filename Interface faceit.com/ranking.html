@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FACEIT Rankings</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="dashboard.css">
+    <link rel="stylesheet" href="ranking.css">
+</head>
+
+<body class="dashboard-body">
+
+    <div class="top-promo-banner theme-green">
+        <span>✈️ Run FACEIT directly from your desktop!</span>
+        <button class="btn-promo">TẢI XUỐNG</button>
+        <span class="close-promo">✕</span>
+    </div>
+
+    <div class="dashboard-layout">
+        <aside class="left-sidebar">
+            <div class="sidebar-header">
+                <div class="logo">FACE<span>I</span>T</div>
+            </div>
+            <div class="sidebar-search">
+                <span class="search-icon">🔍</span>
+                <input type="text" placeholder="Tìm kiếm">
+            </div>
+            <nav class="sidebar-nav">
+                <a href="#" class="nav-link"><span class="icon">👥</span> Party Finder</a>
+                <a href="#" class="nav-link"><span class="icon">▶</span> Chơi</a>
+                <a href="#" class="nav-link active"><span class="icon">📊</span> Xếp hạng</a>
+                <a href="#" class="nav-link"><span class="icon">📈</span> Track</a>
+                <a href="#" class="nav-link"><span class="icon">📺</span> Watch</a>
+                <a href="#" class="nav-link"><span class="icon">📰</span> Nguồn cấp dữ liệu</a>
+            </nav>
+            <div class="sidebar-section">
+                <a href="#" class="nav-link"><span class="icon">🛡️</span> Clubs</a>
+                <a href="#" class="nav-link"><span class="icon">⊕</span> Create a Club</a>
+            </div>
+            <div class="sidebar-bottom">
+                <a href="#" class="nav-link"><span class="icon">🎯</span> Nhiệm vụ</a>
+                <a href="#" class="nav-link"><span class="icon">🛒</span> Cửa hàng</a>
+                <a href="#" class="nav-link highlight-green"><span class="icon">⭐</span> Nâng cấp</a>
+            </div>
+        </aside>
+
+        <main class="dashboard-main">
+
+            <div class="ranking-header-top">
+                <div class="game-info-wrapper">
+                    <img src="https://images.unsplash.com/photo-1542751371-adc38448a05e?w=50&q=80" alt="CS2"
+                        class="game-icon-small">
+                    <span class="dots">•••</span>
+                    <span class="text-green text-xs font-bold">KẾT NỐI GAME</span>
+                </div>
+                <div class="ranking-tabs-main">
+                    <a href="#" class="r-tab-main active">GHÉP TRẬN</a>
+                    <a href="#" class="r-tab-main">FPL</a>
+                </div>
+            </div>
+
+            <div class="ranking-controls">
+                <h3>EU Xếp hạng</h3>
+                <div class="filter-group">
+                    <select class="filter-select">
+                        <option>Tất cả các quốc gia</option>
+                    </select>
+                    <select class="filter-select">
+                        <option value="eu" selected>EU</option>
+                        <option value="na">NA</option>
+                        <option value="sa">SA</option>
+                        <option value="sea">SEA</option>
+                        <option value="oce">OCE</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="table-responsive">
+                <table class="stats-table ranking-table">
+                    <thead>
+                        <tr>
+                            <th class="rank-num">Xếp hạng</th>
+                            <th>Người chơi</th>
+                            <th>Quốc gia</th>
+                            <th class="text-right">Trình độ kỹ năng</th>
+                            <th class="text-right">ELO</th>
+                        </tr>
+                    </thead>
+                    <tbody id="ranking-tbody">
+
+                        <tr>
+                            <td class="rank-num">1</td>
+                            <td>
+                                <div class="player-info-cell">
+                                    <div class="player-avatar-wrapper bg-1">
+                                        <div class="status-dot"></div>
+                                        <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=50&q=80"
+                                            alt="p1">
+                                    </div>
+                                    <span class="player-name">qw1nk1 <span class="verified-icon">✔️</span></span>
+                                </div>
+                            </td>
+                            <td class="flag-cell"><img src="https://flagcdn.com/w20/ru.png" alt="RU"></td>
+                            <td class="text-right"><span class="skill-badge badge-gold">#1 <span
+                                        class="circle-level level-10 micro"><span>10</span></span></span></td>
+                            <td class="text-right elo-num">5.189</td>
+                        </tr>
+
+                        <tr>
+                            <td class="rank-num">2</td>
+                            <td>
+                                <div class="player-info-cell">
+                                    <div class="player-avatar-wrapper bg-2">
+                                        <div class="status-dot"></div>
+                                        <img src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=50&q=80"
+                                            alt="p2">
+                                    </div>
+                                    <span class="player-name">fame-- <span class="verified-icon">✔️</span></span>
+                                </div>
+                            </td>
+                            <td class="flag-cell"><img src="https://flagcdn.com/w20/ru.png" alt="RU"></td>
+                            <td class="text-right"><span class="skill-badge badge-silver">#2 <span
+                                        class="circle-level level-10 micro"><span>10</span></span></span></td>
+                            <td class="text-right elo-num">5.153</td>
+                        </tr>
+
+                        <tr>
+                            <td class="rank-num">3</td>
+                            <td>
+                                <div class="player-info-cell">
+                                    <div class="player-avatar-wrapper bg-3">
+                                        <div class="status-dot"></div>
+                                        <img src="https://images.unsplash.com/photo-1527980965255-d3b416303d12?w=50&q=80"
+                                            alt="p3">
+                                    </div>
+                                    <span class="player-name">donk666 <span class="verified-icon">✔️</span></span>
+                                </div>
+                            </td>
+                            <td class="flag-cell"><img src="https://flagcdn.com/w20/kr.png" alt="KR"></td>
+                            <td class="text-right"><span class="skill-badge badge-bronze">#3 <span
+                                        class="circle-level level-10 micro"><span>10</span></span></span></td>
+                            <td class="text-right elo-num">5.075</td>
+                        </tr>
+
+                        <tr>
+                            <td class="rank-num">4</td>
+                            <td>
+                                <div class="player-info-cell">
+                                    <div class="player-avatar-wrapper">
+                                        <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?w=50&q=80"
+                                            alt="p4">
+                                    </div>
+                                    <span class="player-name">alkarenn56 <span class="verified-icon">✔️</span></span>
+                                </div>
+                            </td>
+                            <td class="flag-cell"><img src="https://flagcdn.com/w20/jp.png" alt="JP"></td>
+                            <td class="text-right"><span class="skill-badge badge-red">#4 <span
+                                        class="circle-level level-10 micro"><span>10</span></span></span></td>
+                            <td class="text-right elo-num">5.044</td>
+                        </tr>
+
+                        <tr>
+                            <td class="rank-num">5</td>
+                            <td>
+                                <div class="player-info-cell">
+                                    <div class="player-avatar-wrapper">
+                                        <div class="status-dot"></div>
+                                        <img src="https://images.unsplash.com/photo-1599566150163-29194dcaad36?w=50&q=80"
+                                            alt="p5">
+                                    </div>
+                                    <span class="player-name">executor <span class="verified-icon">✔️</span></span>
+                                </div>
+                            </td>
+                            <td class="flag-cell"><img src="https://flagcdn.com/w20/ru.png" alt="RU"></td>
+                            <td class="text-right"><span class="skill-badge badge-red">#5 <span
+                                        class="circle-level level-10 micro"><span>10</span></span></span></td>
+                            <td class="text-right elo-num">5.030</td>
+                        </tr>
+
+                        <tr>
+                            <td class="rank-num">6</td>
+                            <td>
+                                <div class="player-info-cell">
+                                    <div class="player-avatar-wrapper">
+                                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=50&q=80"
+                                            alt="p6">
+                                    </div>
+                                    <span class="player-name">b1st- <span class="verified-icon">✔️</span></span>
+                                </div>
+                            </td>
+                            <td class="flag-cell"><img src="https://flagcdn.com/w20/ru.png" alt="RU"></td>
+                            <td class="text-right"><span class="skill-badge badge-red">#6 <span
+                                        class="circle-level level-10 micro"><span>10</span></span></span></td>
+                            <td class="text-right elo-num">5.021</td>
+                        </tr>
+
+                        <tr>
+                            <td class="rank-num">7</td>
+                            <td>
+                                <div class="player-info-cell">
+                                    <div class="player-avatar-wrapper">
+                                        <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=50&q=80"
+                                            alt="p7">
+                                    </div>
+                                    <span class="player-name">HeavyGod <span class="verified-icon">✔️</span></span>
+                                </div>
+                            </td>
+                            <td class="flag-cell"><img src="https://flagcdn.com/w20/il.png" alt="IL"></td>
+                            <td class="text-right"><span class="skill-badge badge-red">#7 <span
+                                        class="circle-level level-10 micro"><span>10</span></span></span></td>
+                            <td class="text-right elo-num">5.011</td>
+                        </tr>
+
+                        <tr>
+                            <td class="rank-num">8</td>
+                            <td>
+                                <div class="player-info-cell">
+                                    <div class="player-avatar-wrapper">
+                                        <div class="status-dot"></div>
+                                        <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=50&q=80"
+                                            alt="p8">
+                                    </div>
+                                    <span class="player-name">m0NESY <span class="verified-icon">✔️</span></span>
+                                </div>
+                            </td>
+                            <td class="flag-cell"><img src="https://flagcdn.com/w20/ru.png" alt="RU"></td>
+                            <td class="text-right"><span class="skill-badge badge-red">#8 <span
+                                        class="circle-level level-10 micro"><span>10</span></span></span></td>
+                            <td class="text-right elo-num">4.995</td>
+                        </tr>
+
+                        <tr>
+                            <td class="rank-num">9</td>
+                            <td>
+                                <div class="player-info-cell">
+                                    <div class="player-avatar-wrapper">
+                                        <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=50&q=80"
+                                            alt="p9">
+                                    </div>
+                                    <span class="player-name">ZywOo <span class="verified-icon">✔️</span></span>
+                                </div>
+                            </td>
+                            <td class="flag-cell"><img src="https://flagcdn.com/w20/fr.png" alt="FR"></td>
+                            <td class="text-right"><span class="skill-badge badge-red">#9 <span
+                                        class="circle-level level-10 micro"><span>10</span></span></span></td>
+                            <td class="text-right elo-num">4.980</td>
+                        </tr>
+
+                        <tr>
+                            <td class="rank-num">10</td>
+                            <td>
+                                <div class="player-info-cell">
+                                    <div class="player-avatar-wrapper">
+                                        <div class="status-dot"></div>
+                                        <img src="https://images.unsplash.com/photo-1566577739112-5180d4bf9390?w=50&q=80"
+                                            alt="p10">
+                                    </div>
+                                    <span class="player-name">NiKo <span class="verified-icon">✔️</span></span>
+                                </div>
+                            </td>
+                            <td class="flag-cell"><img src="https://flagcdn.com/w20/ba.png" alt="BA"></td>
+                            <td class="text-right"><span class="skill-badge badge-red">#10 <span
+                                        class="circle-level level-10 micro"><span>10</span></span></span></td>
+                            <td class="text-right elo-num">4.952</td>
+                        </tr>
+
+                    </tbody>
+                </table>
+
+                <div id="load-more-trigger" class="loading-container">
+                    <div class="spinner"></div>
+                    <span>Đang tải thêm người chơi...</span>
+                </div>
+
+            </div>
+        </main>
+
+        <aside class="right-sidebar">
+            <div class="right-nav">
+                <a href="#" class="r-icon">VS</a>
+                <a href="#" class="r-icon">🔔</a>
+                <a href="#" class="r-icon">👥</a>
+                <a href="#" class="r-icon">💬</a>
+                <a href="#" class="r-icon">⊕</a>
+            </div>
+        </aside>
+    </div>
+
+</body>
+
+</html>
