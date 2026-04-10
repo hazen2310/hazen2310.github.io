@@ -3,7 +3,7 @@
     /* ==========================================================================
        TRADEIT.GG COLOR PALETTE SYSTEM (RGB VARIABLES)
        ========================================================================== */
-    --v-theme-success-500: 2, 176, 89;
+    --v-theme-warning-500: 2, 176, 89;
 
     /* ĐÂY CHÍNH LÀ MÀU CAM THƯƠNG HIỆU CỦA TRADEIT */
     --v-theme-warning-900: 47, 19, 1;
@@ -48,7 +48,7 @@
     --font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
 
     /* Các màu trạng thái dùng cho Win/Lose trong trận đấu */
-    --win-color: rgb(var(--v-theme-success-500));
+    --win-color: rgb(2, 176, 89);
     --lose-color: rgb(var(--v-theme-error-500));
 }
 
@@ -168,7 +168,7 @@ header {
 .hero {
     text-align: center;
     padding: 80px 20px 60px;
-    background: radial-gradient(circle at top, rgba(var(--v-theme-success-500), 0.05) 0%, var(--bg-main) 60%);
+    background: radial-gradient(circle at top, rgba(var(--v-theme-warning-500), 0.05) 0%, var(--bg-main) 60%);
 }
 
 .hero-logo {
@@ -264,7 +264,7 @@ header {
     margin: 0 auto 20px;
     color: var(--accent);
     font-size: 24px;
-    box-shadow: 0 0 20px rgba(var(--v-theme-success-500), 0.1);
+    box-shadow: 0 0 20px rgba(var(--v-theme-warning-500), 0.1);
 }
 
 .feature h3 {
@@ -649,7 +649,7 @@ footer {
    room.html
    ========================================================================== */
 :root {
-    --win-color: rgb(var(--v-theme-success-500));
+    --win-color: rgb(var(--v-theme-warning-500));
     --lose-color: rgb(var(--v-theme-error-400));
     --bg-table-row: rgb(var(--v-theme-gray-800));
 }
@@ -962,7 +962,7 @@ footer {
 }
 
 .lvl-green {
-    background-color: rgb(var(--v-theme-success-500));
+    background-color: rgb(var(--v-theme-warning-500));
     color: #000;
 }
 
@@ -1384,8 +1384,8 @@ footer {
    home.html
    ========================================================================== */
 :root {
-    --brand-orange: rgb(var(--v-theme-success-500));
-    --brand-orange-hover: rgb(var(--v-theme-success-600));
+    --brand-orange: rgb(var(--v-theme-warning-500));
+    --brand-orange-hover: rgb(var(--v-theme-warning-600));
     --sidebar-bg: rgb(var(--v-theme-gray-900));
     --sidebar-width: 240px;
     --right-bar-width: 60px;
@@ -1518,7 +1518,7 @@ footer {
 .nav-link.active {
     color: var(--text-main);
     border-left: 3px solid var(--brand-orange);
-    background-color: rgba(var(--v-theme-success-500), 0.05);
+    background-color: rgba(var(--v-theme-warning-500), 0.05);
 }
 
 .nav-link .icon {
@@ -1636,7 +1636,7 @@ footer {
 }
 
 .play-card {
-    background: linear-gradient(180deg, rgb(var(--v-theme-success-500)) 0%, rgb(var(--v-theme-success-900)) 100%);
+    background: linear-gradient(180deg, rgb(var(--v-theme-warning-500)) 0%, rgb(var(--v-theme-warning-900)) 100%);
     border-radius: 8px;
     height: 180px;
     display: flex;
@@ -2318,11 +2318,11 @@ footer {
 }
 
 .cell.lvl-1 {
-    background: rgba(var(--v-theme-success-500), 0.4);
+    background: rgba(var(--v-theme-warning-500), 0.4);
 }
 
 .cell.lvl-2 {
-    background: rgba(var(--v-theme-success-500), 0.7);
+    background: rgba(var(--v-theme-warning-500), 0.7);
 }
 
 .cell.lvl-3 {
@@ -2667,7 +2667,7 @@ footer {
 }
 
 .badge-win {
-    background: rgba(var(--v-theme-success-500), 0.1);
+    background: rgba(var(--v-theme-warning-500), 0.1);
     color: var(--win-color);
     padding: 2px 6px;
     border-radius: 4px;
@@ -3108,8 +3108,8 @@ footer {
 }
 
 .esea-banner {
-    background: linear-gradient(135deg, rgb(var(--v-theme-success-900)) 0%, rgb(var(--v-theme-gray-900)) 100%);
-    border-color: rgb(var(--v-theme-success-800));
+    background: linear-gradient(135deg, rgb(var(--v-theme-warning-900)) 0%, rgb(var(--v-theme-gray-900)) 100%);
+    border-color: rgb(var(--v-theme-warning-800));
     display: flex;
     align-items: center;
 }
@@ -3580,8 +3580,8 @@ footer {
 }
 
 .esea-promo-banner {
-    background: linear-gradient(90deg, rgb(var(--v-theme-success-900)) 0%, rgb(var(--v-theme-gray-900)) 100%);
-    border: 1px solid rgb(var(--v-theme-success-800));
+    background: linear-gradient(90deg, rgb(var(--v-theme-warning-900)) 0%, rgb(var(--v-theme-gray-900)) 100%);
+    border: 1px solid rgb(var(--v-theme-warning-800));
     border-radius: 8px;
     padding: 20px;
     display: flex;
@@ -3829,7 +3829,7 @@ footer {
 }
 
 .league-hero {
-    background: linear-gradient(180deg, rgb(var(--v-theme-success-900)) 0%, var(--bg-card) 100%);
+    background: linear-gradient(180deg, rgb(var(--v-theme-warning-900)) 0%, var(--bg-card) 100%);
     border: 1px solid var(--border-color);
     border-radius: 8px;
     padding: 30px;
