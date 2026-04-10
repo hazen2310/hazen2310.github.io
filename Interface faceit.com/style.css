@@ -648,11 +648,6 @@ footer {
 /* ==========================================================================
    room.html
    ========================================================================== */
-:root {
-    --win-color: rgb(var(--v-theme-warning-500));
-    --lose-color: rgb(var(--v-theme-error-400));
-    --bg-table-row: rgb(var(--v-theme-gray-800));
-}
 
 .mt-40 {
     margin-top: 40px;
@@ -1383,13 +1378,6 @@ footer {
 /* ==========================================================================
    home.html
    ========================================================================== */
-:root {
-    --brand-orange: rgb(var(--v-theme-warning-500));
-    --brand-orange-hover: rgb(var(--v-theme-warning-600));
-    --sidebar-bg: rgb(var(--v-theme-gray-900));
-    --sidebar-width: 240px;
-    --right-bar-width: 60px;
-}
 
 .dashboard-body {
     height: 100vh;
@@ -2110,9 +2098,6 @@ footer {
 /* ==========================================================================
    profile.html
    ========================================================================== */
-:root {
-    --lvl-10-color: rgb(var(--v-theme-error-600));
-}
 
 .profile-page {
     padding: 20px;
@@ -3034,7 +3019,7 @@ footer {
 }
 
 .badge-green {
-    background: linear-gradient(135deg, var(--accent) 0%, rgb(var(--v-theme-success-700)) 100%);
+    background: linear-gradient(135deg, var(--accent) 0%, rgb(var(--v-theme-warning-700)) 100%);
     color: #000;
 }
 
