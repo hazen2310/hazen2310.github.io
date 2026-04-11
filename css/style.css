@@ -50,6 +50,10 @@
     /* Các màu trạng thái dùng cho Win/Lose trong trận đấu */
     --win-color: rgb(2, 176, 89);
     --lose-color: rgb(var(--v-theme-error-500));
+
+
+
+
 }
 
 * {
@@ -95,12 +99,102 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 16px 40px;
-    background-color: var(--bg-main);
+    background-color: transparent;
     border-bottom: 1px solid var(--border-color);
     position: sticky;
     top: 0;
     z-index: 100;
 }
+
+    /* NAHUI */
+
+
+
+
+/* MAIN */
+.bg-purple{background-color:#1c1c8c!important;color:#fff!important}
+
+/* LIGHTEN */
+.bg-purple-lighten-5{background-color:#e6e6f5!important;color:#000!important}
+.bg-purple-lighten-4{background-color:#bfbfe6!important;color:#000!important}
+.bg-purple-lighten-3{background-color:#9999d6!important;color:#fff!important}
+.bg-purple-lighten-2{background-color:#7373c7!important;color:#fff!important}
+.bg-purple-lighten-1{background-color:#4d4db8!important;color:#fff!important}
+
+/* DARKEN */
+.bg-purple-darken-1{background-color:#19197d!important;color:#fff!important}
+.bg-purple-darken-2{background-color:#15156e!important;color:#fff!important}
+.bg-purple-darken-3{background-color:#11115f!important;color:#fff!important}
+.bg-purple-darken-4{background-color:#0d0d2b!important;color:#fff!important}
+.bg-purple-darken-4{background-color:#0a0a36!important;color:#fff!important}
+
+/* ACCENT (highlight / glow style) */
+.bg-purple-accent-1{background-color:#5c5cff!important;color:#fff!important}
+.bg-purple-accent-2{background-color:#3d3dff!important;color:#fff!important}
+.bg-purple-accent-3{background-color:#1f1fff!important;color:#fff!important}
+.bg-purple-accent-4{background-color:#0000ff!important;color:#fff!important}
+
+
+/* =========================
+   DEEP PURPLE → NAVY STYLE
+   ========================= */
+
+.bg-deep-purple{background-color:#14146b!important;color:#fff!important}
+
+.bg-deep-purple-lighten-5{background-color:#e3e3f3!important;color:#000!important}
+.bg-deep-purple-lighten-4{background-color:#b8b8dd!important;color:#000!important}
+.bg-deep-purple-lighten-3{background-color:#8c8cc7!important;color:#fff!important}
+.bg-deep-purple-lighten-2{background-color:#6161b1!important;color:#fff!important}
+.bg-deep-purple-lighten-1{background-color:#36369b!important;color:#fff!important}
+
+.bg-deep-purple-darken-1{background-color:#12125f!important;color:#fff!important}
+.bg-deep-purple-darken-2{background-color:#0f0f52!important;color:#fff!important}
+.bg-deep-purple-darken-3{background-color:#0b0b45!important;color:#fff!important}
+.bg-deep-purple-darken-4{background-color:#080838!important;color:#fff!important}
+
+.bg-deep-purple-accent-1{background-color:#6a6aff!important;color:#fff!important}
+.bg-deep-purple-accent-2{background-color:#4a4aff!important;color:#fff!important}
+.bg-deep-purple-accent-3{background-color:#2a2aff!important;color:#fff!important}
+.bg-deep-purple-accent-4{background-color:#0a0aff!important;color:#fff!important}
+
+
+/* =========================
+   BLUE → SAME TONE FAMILY
+   ========================= */
+.bg-blue-chinese{background-color:#161718!important;color:#000!important}
+.bg-blue{background-color:#2626a6!important;color:#fff!important}
+
+.bg-blue-lighten-5{background-color:#e8e8fa!important;color:#000!important}
+.bg-blue-lighten-4{background-color:#c2c2f0!important;color:#000!important}
+.bg-blue-lighten-3{background-color:#9b9be6!important;color:#000!important}
+.bg-blue-lighten-2{background-color:#7575db!important;color:#fff!important}
+.bg-blue-lighten-1{background-color:#4f4fd1!important;color:#fff!important}
+
+.bg-blue-darken-1{background-color:#212196!important;color:#fff!important}
+.bg-blue-darken-2{background-color:#1b1b85!important;color:#fff!important}
+.bg-blue-darken-3{background-color:#131364d7!important;color:#fff!important}
+.bg-blue-darken-4{background-color:#0e0e35!important;color:#fff!important}
+
+.bg-blue-accent-1{background-color:#7a7aff!important;color:#000!important}
+.bg-blue-accent-2{background-color:#5a5aff!important;color:#fff!important}
+.bg-blue-accent-3{background-color:#3a3aff!important;color:#fff!important}
+.bg-blue-accent-4{background-color:#1a1aff!important;color:#fff!important}
+
+/* TEXT BLUE */
+.text-blue{color:#2196f3!important}
+.text-blue-lighten-1{color:#e3f2fd!important}
+.text-blue-lighten-2{color:#bbdefb!important}
+.text-blue-lighten-3{color:#90caf9!important}
+.text-blue-lighten-4{color:#64b5f6!important}
+.text-blue-lighten-5{color:#42a5f5!important}
+.text-blue-darken-1{color:#1e88e5!important}
+.text-blue-darken-2{color:#1976d2!important}
+.text-blue-darken-3{color:#1565c0!important}
+.text-blue-darken-4{color:#0d47a1!important}
+.text-blue-accent-1{color:#82b1ff!important}
+.text-blue-accent-2{color:#448aff!important}
+.text-blue-accent-3{color:#2979ff!important}
+.text-blue-accent-4{color:#2962ff!important}
 
 .logo {
     font-size: 24px;
@@ -374,9 +468,9 @@ header {
 }
 
 .news-card {
-    background-color: var(--bg-secondary);
-    border: 1px solid var(--border-color);
-    border-radius: 8px;
+    /* background-color: var(--bg-secondary); */
+    /* border: 1px solid var(--border-color); */
+    /* border-radius: 8px; */
     overflow: hidden;
     transition: transform 0.2s;
 }
