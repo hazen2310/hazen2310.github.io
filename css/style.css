@@ -1,59 +1,23 @@
-/* style.css */
 :root {
-    /* ==========================================================================
-       TRADEIT.GG COLOR PALETTE SYSTEM (RGB VARIABLES)
-       ========================================================================== */
-    --v-theme-warning-500: 2, 176, 89;
+    /* Màu nền chính: Đen ánh xanh cực tối để làm nổi bật vầng sáng */
+    --bg-main: #050510;
+    --bg-secondary: #0a0a1a;
+    --bg-card: #0f0f24;
 
-    /* ĐÂY CHÍNH LÀ MÀU CAM THƯƠNG HIỆU CỦA TRADEIT */
-    --v-theme-warning-900: 47, 19, 1;
-    --v-theme-warning-600: 188, 74, 4;
-    --v-theme-warning-500: 235, 93, 5;
-    /* Cam Tradeit chủ đạo */
-    --v-theme-warning-400: 251, 123, 43;
-    --v-theme-warning-300: 252, 156, 96;
+    /* Màu nhấn (Nút bấm, vầng sáng) */
+    --accent: #4a4aff;
+    --accent-hover: #2a2aff;
 
-    --v-theme-error-500: 239, 48, 84;
+    /* Màu chữ và viền */
+    --text-main: #ffffff;
+    --text-muted: #8c8cc7;
+    --border-color: #1a1a3a;
+    /* Viền tối màu cho chìm vào nền */
 
-    /* DẢI MÀU NỀN TỐI (DARK THEME) CỦA TRADEIT */
-    --v-theme-gray-900: 15, 15, 20;
-    --v-theme-gray-800: 18, 18, 23;
-    --v-theme-gray-700: 22, 22, 29;
-    --v-theme-gray-600: 28, 29, 38;
-    --v-theme-gray-500: 37, 38, 50;
-    --v-theme-gray-400: 54, 55, 69;
-    --v-theme-gray-300: 120, 126, 135;
-    --v-theme-gray-200: 222, 222, 222;
-
-    --v-theme-on-background: 255, 255, 255;
-
-    /* ==========================================================================
-       MAPPING ÁNH XẠ (ĐÃ SỬA THÀNH MÀU CAM CHUẨN TRADEIT)
-       ========================================================================== */
-    --bg-main: rgb(var(--v-theme-gray-900));
-    /* Nền tối nhất */
-    --bg-secondary: rgb(var(--v-theme-gray-800));
-    /* Nền phụ */
-    --bg-card: rgb(var(--v-theme-gray-700));
-    /* Nền của các thẻ Card */
-
-    /* SỬA LẠI THÀNH MÀU CAM (WARNING-500) THAY VÌ MÀU XANH (SUCCESS) */
-    --accent: rgb(var(--v-theme-warning-500));
-    --accent-hover: rgb(var(--v-theme-warning-400));
-
-    --text-main: rgb(var(--v-theme-on-background));
-    --text-muted: rgb(var(--v-theme-gray-300));
-    --border-color: rgb(var(--v-theme-gray-600));
-
+    /* Màu trạng thái */
+    --win-color: #00e57c;
+    --lose-color: #ff3b3b;
     --font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-
-    /* Các màu trạng thái dùng cho Win/Lose trong trận đấu */
-    --win-color: rgb(2, 176, 89);
-    --lose-color: rgb(var(--v-theme-error-500));
-
-
-
-
 }
 
 * {
@@ -106,95 +70,300 @@ header {
     z-index: 100;
 }
 
-    /* NAHUI */
+/* NAHUI */
 
 
 
 
 /* MAIN */
-.bg-purple{background-color:#1c1c8c!important;color:#fff!important}
+.bg-purple {
+    background-color: #1c1c8c !important;
+    color: #fff !important
+}
 
 /* LIGHTEN */
-.bg-purple-lighten-5{background-color:#e6e6f5!important;color:#000!important}
-.bg-purple-lighten-4{background-color:#bfbfe6!important;color:#000!important}
-.bg-purple-lighten-3{background-color:#9999d6!important;color:#fff!important}
-.bg-purple-lighten-2{background-color:#7373c7!important;color:#fff!important}
-.bg-purple-lighten-1{background-color:#4d4db8!important;color:#fff!important}
+.bg-purple-lighten-5 {
+    background-color: #e6e6f5 !important;
+    color: #000 !important
+}
+
+.bg-purple-lighten-4 {
+    background-color: #bfbfe6 !important;
+    color: #000 !important
+}
+
+.bg-purple-lighten-3 {
+    background-color: #9999d6 !important;
+    color: #fff !important
+}
+
+.bg-purple-lighten-2 {
+    background-color: #7373c7 !important;
+    color: #fff !important
+}
+
+.bg-purple-lighten-1 {
+    background-color: #4d4db8 !important;
+    color: #fff !important
+}
 
 /* DARKEN */
-.bg-purple-darken-1{background-color:#19197d!important;color:#fff!important}
-.bg-purple-darken-2{background-color:#15156e!important;color:#fff!important}
-.bg-purple-darken-3{background-color:#11115f!important;color:#fff!important}
-.bg-purple-darken-4{background-color:#0d0d2b!important;color:#fff!important}
-.bg-purple-darken-4{background-color:#0a0a36!important;color:#fff!important}
+.bg-purple-darken-1 {
+    background-color: #19197d !important;
+    color: #fff !important
+}
+
+.bg-purple-darken-2 {
+    background-color: #15156e !important;
+    color: #fff !important
+}
+
+.bg-purple-darken-3 {
+    background-color: #11115f !important;
+    color: #fff !important
+}
+
+.bg-purple-darken-4 {
+    background-color: #0d0d2b !important;
+    color: #fff !important
+}
+
+.bg-purple-darken-4 {
+    background-color: #0a0a36 !important;
+    color: #fff !important
+}
 
 /* ACCENT (highlight / glow style) */
-.bg-purple-accent-1{background-color:#5c5cff!important;color:#fff!important}
-.bg-purple-accent-2{background-color:#3d3dff!important;color:#fff!important}
-.bg-purple-accent-3{background-color:#1f1fff!important;color:#fff!important}
-.bg-purple-accent-4{background-color:#0000ff!important;color:#fff!important}
+.bg-purple-accent-1 {
+    background-color: #5c5cff !important;
+    color: #fff !important
+}
+
+.bg-purple-accent-2 {
+    background-color: #3d3dff !important;
+    color: #fff !important
+}
+
+.bg-purple-accent-3 {
+    background-color: #1f1fff !important;
+    color: #fff !important
+}
+
+.bg-purple-accent-4 {
+    background-color: #0000ff !important;
+    color: #fff !important
+}
 
 
 /* =========================
    DEEP PURPLE → NAVY STYLE
    ========================= */
 
-.bg-deep-purple{background-color:#14146b!important;color:#fff!important}
+.bg-deep-purple {
+    background-color: #14146b !important;
+    color: #fff !important
+}
 
-.bg-deep-purple-lighten-5{background-color:#e3e3f3!important;color:#000!important}
-.bg-deep-purple-lighten-4{background-color:#b8b8dd!important;color:#000!important}
-.bg-deep-purple-lighten-3{background-color:#8c8cc7!important;color:#fff!important}
-.bg-deep-purple-lighten-2{background-color:#6161b1!important;color:#fff!important}
-.bg-deep-purple-lighten-1{background-color:#36369b!important;color:#fff!important}
+.bg-deep-purple-lighten-5 {
+    background-color: #e3e3f3 !important;
+    color: #000 !important
+}
 
-.bg-deep-purple-darken-1{background-color:#12125f!important;color:#fff!important}
-.bg-deep-purple-darken-2{background-color:#0f0f52!important;color:#fff!important}
-.bg-deep-purple-darken-3{background-color:#0b0b45!important;color:#fff!important}
-.bg-deep-purple-darken-4{background-color:#080838!important;color:#fff!important}
+.bg-deep-purple-lighten-4 {
+    background-color: #b8b8dd !important;
+    color: #000 !important
+}
 
-.bg-deep-purple-accent-1{background-color:#6a6aff!important;color:#fff!important}
-.bg-deep-purple-accent-2{background-color:#4a4aff!important;color:#fff!important}
-.bg-deep-purple-accent-3{background-color:#2a2aff!important;color:#fff!important}
-.bg-deep-purple-accent-4{background-color:#0a0aff!important;color:#fff!important}
+.bg-deep-purple-lighten-3 {
+    background-color: #8c8cc7 !important;
+    color: #fff !important
+}
+
+.bg-deep-purple-lighten-2 {
+    background-color: #6161b1 !important;
+    color: #fff !important
+}
+
+.bg-deep-purple-lighten-1 {
+    background-color: #36369b !important;
+    color: #fff !important
+}
+
+.bg-deep-purple-darken-1 {
+    background-color: #12125f !important;
+    color: #fff !important
+}
+
+.bg-deep-purple-darken-2 {
+    background-color: #0f0f52 !important;
+    color: #fff !important
+}
+
+.bg-deep-purple-darken-3 {
+    background-color: #0b0b45 !important;
+    color: #fff !important
+}
+
+.bg-deep-purple-darken-4 {
+    background-color: #080838 !important;
+    color: #fff !important
+}
+
+.bg-deep-purple-accent-1 {
+    background-color: #6a6aff !important;
+    color: #fff !important
+}
+
+.bg-deep-purple-accent-2 {
+    background-color: #4a4aff !important;
+    color: #fff !important
+}
+
+.bg-deep-purple-accent-3 {
+    background-color: #2a2aff !important;
+    color: #fff !important
+}
+
+.bg-deep-purple-accent-4 {
+    background-color: #0a0aff !important;
+    color: #fff !important
+}
 
 
 /* =========================
    BLUE → SAME TONE FAMILY
    ========================= */
-.bg-blue-chinese{background-color:#161718!important;color:#000!important}
-.bg-blue{background-color:#2626a6!important;color:#fff!important}
+.bg-blue-chinese {
+    background-color: #161718 !important;
+    color: #000 !important
+}
 
-.bg-blue-lighten-5{background-color:#e8e8fa!important;color:#000!important}
-.bg-blue-lighten-4{background-color:#c2c2f0!important;color:#000!important}
-.bg-blue-lighten-3{background-color:#9b9be6!important;color:#000!important}
-.bg-blue-lighten-2{background-color:#7575db!important;color:#fff!important}
-.bg-blue-lighten-1{background-color:#4f4fd1!important;color:#fff!important}
+.bg-blue {
+    background-color: #2626a6 !important;
+    color: #fff !important
+}
 
-.bg-blue-darken-1{background-color:#212196!important;color:#fff!important}
-.bg-blue-darken-2{background-color:#1b1b85!important;color:#fff!important}
-.bg-blue-darken-3{background-color:#131364d7!important;color:#fff!important}
-.bg-blue-darken-4{background-color:#0e0e35!important;color:#fff!important}
+.bg-blue-lighten-5 {
+    background-color: #e8e8fa !important;
+    color: #000 !important
+}
 
-.bg-blue-accent-1{background-color:#7a7aff!important;color:#000!important}
-.bg-blue-accent-2{background-color:#5a5aff!important;color:#fff!important}
-.bg-blue-accent-3{background-color:#3a3aff!important;color:#fff!important}
-.bg-blue-accent-4{background-color:#1a1aff!important;color:#fff!important}
+.bg-blue-lighten-4 {
+    background-color: #c2c2f0 !important;
+    color: #000 !important
+}
+
+.bg-blue-lighten-3 {
+    background-color: #9b9be6 !important;
+    color: #000 !important
+}
+
+.bg-blue-lighten-2 {
+    background-color: #7575db !important;
+    color: #fff !important
+}
+
+.bg-blue-lighten-1 {
+    background-color: #4f4fd1 !important;
+    color: #fff !important
+}
+
+.bg-blue-darken-1 {
+    background-color: #212196 !important;
+    color: #fff !important
+}
+
+.bg-blue-darken-2 {
+    background-color: #1b1b85 !important;
+    color: #fff !important
+}
+
+.bg-blue-darken-3 {
+    background-color: #131364d7 !important;
+    color: #fff !important
+}
+
+.bg-blue-darken-4 {
+    background-color: #0e0e35 !important;
+    color: #fff !important
+}
+
+.bg-blue-accent-1 {
+    background-color: #7a7aff !important;
+    color: #000 !important
+}
+
+.bg-blue-accent-2 {
+    background-color: #5a5aff !important;
+    color: #fff !important
+}
+
+.bg-blue-accent-3 {
+    background-color: #3a3aff !important;
+    color: #fff !important
+}
+
+.bg-blue-accent-4 {
+    background-color: #1a1aff !important;
+    color: #fff !important
+}
 
 /* TEXT BLUE */
-.text-blue{color:#2196f3!important}
-.text-blue-lighten-1{color:#e3f2fd!important}
-.text-blue-lighten-2{color:#bbdefb!important}
-.text-blue-lighten-3{color:#90caf9!important}
-.text-blue-lighten-4{color:#64b5f6!important}
-.text-blue-lighten-5{color:#42a5f5!important}
-.text-blue-darken-1{color:#1e88e5!important}
-.text-blue-darken-2{color:#1976d2!important}
-.text-blue-darken-3{color:#1565c0!important}
-.text-blue-darken-4{color:#0d47a1!important}
-.text-blue-accent-1{color:#82b1ff!important}
-.text-blue-accent-2{color:#448aff!important}
-.text-blue-accent-3{color:#2979ff!important}
-.text-blue-accent-4{color:#2962ff!important}
+.text-blue {
+    color: #2196f3 !important
+}
+
+.text-blue-lighten-1 {
+    color: #e3f2fd !important
+}
+
+.text-blue-lighten-2 {
+    color: #bbdefb !important
+}
+
+.text-blue-lighten-3 {
+    color: #90caf9 !important
+}
+
+.text-blue-lighten-4 {
+    color: #64b5f6 !important
+}
+
+.text-blue-lighten-5 {
+    color: #42a5f5 !important
+}
+
+.text-blue-darken-1 {
+    color: #1e88e5 !important
+}
+
+.text-blue-darken-2 {
+    color: #1976d2 !important
+}
+
+.text-blue-darken-3 {
+    color: #1565c0 !important
+}
+
+.text-blue-darken-4 {
+    color: #0d47a1 !important
+}
+
+.text-blue-accent-1 {
+    color: #82b1ff !important
+}
+
+.text-blue-accent-2 {
+    color: #448aff !important
+}
+
+.text-blue-accent-3 {
+    color: #2979ff !important
+}
+
+.text-blue-accent-4 {
+    color: #2962ff !important
+}
 
 .logo {
     font-size: 24px;
@@ -258,38 +427,47 @@ header {
     font-size: 18px;
 }
 
-/* ----- Hero Section ----- */
+/*  HERO SECTION */
+/* 1. Phần khung chứa: BẮT BUỘC phải là màu nền tối (--bg-main) */
 .hero {
     text-align: center;
-    padding: 80px 20px 60px;
-    background: radial-gradient(circle at top, rgba(var(--v-theme-warning-500), 0.05) 0%, var(--bg-main) 60%);
+    padding: 120px 20px 100px;
+    background-color: var(--bg-main);
+    /* Không được để màu xanh ở đây */
+    background-image: none;
+    position: relative;
+    overflow: hidden;
 }
 
-.hero-logo {
-    font-size: 32px;
-    font-weight: 900;
-    margin-bottom: 20px;
-    letter-spacing: 2px;
+/* 2. Cục sáng ảo ở giữa: Đây mới là chỗ để màu xanh */
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 40%;
+    height: 200px;
+
+    /* Màu xanh tím tối hơn một chút theo ý bạn */
+    background-color: #0b0b8a;
+
+    /* LÀM NHÒE: Thông số này biến hình chữ nhật cứng thành vầng sáng */
+    filter: blur(120px);
+
+    opacity: 0.6;
+    z-index: 0;
+    pointer-events: none;
 }
 
-.hero h1 {
-    font-size: 42px;
-    margin-bottom: 16px;
-    font-weight: 800;
-}
-
-.hero p {
-    color: var(--text-muted);
-    font-size: 16px;
-    max-width: 500px;
-    margin: 0 auto 32px;
-}
-
+/* 3. Chữ và nút bấm */
+.hero-logo,
+.hero h1,
+.hero p,
 .btn-hero {
-    font-size: 15px;
-    padding: 14px 32px;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
+    position: relative;
+    z-index: 1;
 }
 
 /* ----- Stats Section ----- */
