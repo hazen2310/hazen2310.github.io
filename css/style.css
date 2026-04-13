@@ -1648,6 +1648,404 @@ footer {
 }
 
 /* ==========================================================================
+   room-general.html
+   ========================================================================== */
+
+/* Utils reused & extended */
+.flex-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.pt-10 {
+    padding-top: 10px;
+}
+
+.mt-15 {
+    margin-top: 15px;
+}
+
+.ml-15 {
+    margin-left: 15px;
+}
+
+.border-t {
+    border-top: 1px solid var(--border-color);
+}
+
+.bg-accent {
+    background-color: var(--accent);
+}
+
+.text-accent {
+    color: var(--accent);
+}
+
+.border-accent {
+    border-color: var(--accent) !important;
+}
+
+.btn-block {
+    width: 100%;
+    display: block;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+/* Sub Header Overrides */
+.badge-new {
+    padding: 2px 5px;
+    border-radius: 4px;
+    font-size: 9px;
+    font-weight: 800;
+    margin-left: 5px;
+    vertical-align: middle;
+}
+
+.match-actions .icon {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--text-muted);
+    cursor: pointer;
+}
+
+.match-actions .icon:hover {
+    color: var(--text-main);
+}
+
+/* Room Grid Layout */
+.room-details-grid {
+    display: grid;
+    grid-template-columns: 1fr 280px 1fr;
+    /* Chia 3 cột: Trái - Giữa - Phải */
+    gap: 30px;
+    align-items: start;
+}
+
+.col-header {
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--text-main);
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+/* Player Rows */
+.players-list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.player-row-item {
+    display: flex;
+    align-items: center;
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 10px 15px;
+    transition: 0.2s;
+}
+
+.player-row-item:hover {
+    background: var(--bg-card);
+    border-color: var(--text-muted);
+}
+
+.p-avatar-wrap {
+    position: relative;
+    width: 32px;
+    height: 32px;
+    margin-right: 15px;
+}
+
+.p-avatar-wrap img {
+    width: 100%;
+    height: 100%;
+    border-radius: 6px;
+    object-fit: cover;
+    border: 1px solid var(--border-color);
+}
+
+.leader-crown {
+    position: absolute;
+    top: -8px;
+    left: -8px;
+    font-size: 12px;
+    background: var(--bg-card);
+    border-radius: 50%;
+    padding: 2px;
+}
+
+.p-name-wrap {
+    flex: 1;
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--text-main);
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.p-stats-wrap {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.trend-icon {
+    font-size: 12px;
+    color: var(--text-muted);
+}
+
+.elo {
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--text-muted);
+}
+
+/* Center Column (Map Card & Buttons) */
+.map-pick-card {
+    position: relative;
+    width: 100%;
+    height: 60px;
+    border-radius: 6px;
+    overflow: hidden;
+    border: 1px solid var(--border-color);
+}
+
+.map-bg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.map-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.3) 100%);
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+}
+
+.map-name {
+    font-size: 14px;
+    color: #fff;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+}
+
+.demo-link {
+    letter-spacing: 0.5px;
+}
+
+.center-buttons .btn-primary {
+    padding: 12px;
+    font-size: 12px;
+    font-weight: 800;
+}
+
+/* Chat Sidebar (Thay thế Right Sidebar mặc định) */
+.chat-sidebar {
+    width: 320px;
+    /* Rộng hơn thanh icon bình thường */
+    background-color: var(--bg-secondary);
+    border-left: 1px solid var(--border-color);
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+}
+
+.chat-section {
+    display: flex;
+    flex-direction: column;
+    height: 50%;
+    border-bottom: 1px solid var(--border-color);
+    position: relative;
+}
+
+.chat-header {
+    padding: 15px 20px;
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--text-main);
+    border-bottom: 1px solid var(--border-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--bg-main);
+}
+
+.chat-body {
+    flex: 1;
+    background: var(--bg-secondary);
+    padding: 20px;
+}
+
+/* System Popup in Chat */
+.system-popup {
+    position: absolute;
+    top: 60px;
+    left: 10px;
+    right: 10px;
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    padding: 15px;
+    z-index: 10;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+.system-popup .popup-head {
+    font-size: 12px;
+    color: var(--text-main);
+    margin-bottom: 5px;
+}
+
+.system-popup p {
+    line-height: 1.4;
+    color: var(--text-muted);
+}
+
+.timer-badge {
+    display: inline-block;
+    background: var(--bg-main);
+    border: 1px solid var(--border-color);
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 11px;
+    font-weight: 800;
+}
+
+/* ==========================================================
+   TOOLTIPS (Match Time & Team Balance)
+   ========================================================== */
+
+/* 1. Tooltip Thời gian trận đấu (Nằm dưới chữ Đã kết thúc) */
+.time-tooltip {
+    position: absolute;
+    top: calc(100% + 10px);
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    padding: 12px 15px;
+    z-index: 100;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.2s ease;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8);
+    color: var(--text-main);
+    cursor: default;
+    white-space: nowrap;
+    text-align: left;
+}
+
+.time-tooltip p {
+    font-size: 11px;
+    margin: 5px 0;
+    font-weight: 600;
+    color: var(--text-main);
+}
+
+.match-status:hover .time-tooltip {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* 2. Tooltip Team Balance (Nằm dưới nút sấm sét) */
+.map-icon {
+    position: relative;
+    /* Bắt buộc để làm mỏ neo cho tooltip */
+    cursor: pointer;
+    /* Các thuộc tính cũ */
+    z-index: 2;
+    background-color: var(--bg-main);
+    border: 2px solid var(--accent);
+    color: var(--accent);
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+}
+
+.team-balance-tooltip {
+    position: absolute;
+    top: calc(100% + 15px);
+    /* Cách icon sấm sét 1 khoảng */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 380px;
+    background-color: var(--bg-secondary);
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    padding: 20px;
+    z-index: 100;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.2s ease;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8);
+    color: var(--text-main);
+    cursor: default;
+}
+
+.map-icon:hover .team-balance-tooltip {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Thanh gạch nối giữa icon và tooltip */
+.team-balance-tooltip::before {
+    content: '';
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    width: 1px;
+    height: 15px;
+    background-color: var(--accent);
+}
+
+.tooltip-link {
+    display: block;
+    text-align: center;
+    margin-top: 15px;
+    color: var(--accent);
+    font-weight: 700;
+    font-size: 12px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.tooltip-link:hover {
+    color: var(--accent-hover);
+}
+
+/* ==========================================================================
    home.html
    ========================================================================== */
 
