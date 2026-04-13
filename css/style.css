@@ -1,20 +1,12 @@
 :root {
-    /* Màu nền chính: Đen ánh xanh cực tối để làm nổi bật vầng sáng */
     --bg-main: #050510;
     --bg-secondary: #0a0a1a;
     --bg-card: #0f0f24;
-
-    /* Màu nhấn (Nút bấm, vầng sáng) */
     --accent: #4a4aff;
     --accent-hover: #2a2aff;
-
-    /* Màu chữ và viền */
     --text-main: #ffffff;
     --text-muted: #8c8cc7;
     --border-color: #1a1a3a;
-    /* Viền tối màu cho chìm vào nền */
-
-    /* Màu trạng thái */
     --win-color: #00e57c;
     --lose-color: #ff3b3b;
     --font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
@@ -32,6 +24,30 @@ body {
     font-family: var(--font-family);
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--bg-main);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #212196;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: var(--accent);
+}
+
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #212196 var(--bg-main);
 }
 
 a {
@@ -69,11 +85,6 @@ header {
     top: 0;
     z-index: 100;
 }
-
-/* NAHUI */
-
-
-
 
 /* MAIN */
 .bg-purple {
@@ -428,18 +439,15 @@ header {
 }
 
 /*  HERO SECTION */
-/* 1. Phần khung chứa: BẮT BUỘC phải là màu nền tối (--bg-main) */
 .hero {
     text-align: center;
     padding: 120px 20px 100px;
     background-color: var(--bg-main);
-    /* Không được để màu xanh ở đây */
     background-image: none;
     position: relative;
     overflow: hidden;
 }
 
-/* 2. Cục sáng ảo ở giữa: Đây mới là chỗ để màu xanh */
 .hero::before {
     content: '';
     position: absolute;
@@ -449,11 +457,7 @@ header {
 
     width: 40%;
     height: 200px;
-
-    /* Màu xanh tím tối hơn một chút theo ý bạn */
     background-color: #0b0b8a;
-
-    /* LÀM NHÒE: Thông số này biến hình chữ nhật cứng thành vầng sáng */
     filter: blur(120px);
 
     opacity: 0.6;
@@ -461,7 +465,6 @@ header {
     pointer-events: none;
 }
 
-/* 3. Chữ và nút bấm */
 .hero-logo,
 .hero h1,
 .hero p,
@@ -1651,7 +1654,6 @@ footer {
    room-general.html
    ========================================================================== */
 
-/* Utils reused & extended */
 .flex-between {
     display: flex;
     justify-content: space-between;
@@ -1709,7 +1711,6 @@ footer {
     cursor: pointer;
 }
 
-/* Sub Header Overrides */
 .badge-new {
     padding: 2px 5px;
     border-radius: 4px;
@@ -1730,11 +1731,9 @@ footer {
     color: var(--text-main);
 }
 
-/* Room Grid Layout */
 .room-details-grid {
     display: grid;
     grid-template-columns: 1fr 280px 1fr;
-    /* Chia 3 cột: Trái - Giữa - Phải */
     gap: 30px;
     align-items: start;
 }
@@ -1748,7 +1747,6 @@ footer {
     border-bottom: 1px solid var(--border-color);
 }
 
-/* Player Rows */
 .players-list {
     display: flex;
     flex-direction: column;
@@ -1822,7 +1820,6 @@ footer {
     color: var(--text-muted);
 }
 
-/* Center Column (Map Card & Buttons) */
 .map-pick-card {
     position: relative;
     width: 100%;
@@ -1866,10 +1863,8 @@ footer {
     font-weight: 800;
 }
 
-/* Chat Sidebar (Thay thế Right Sidebar mặc định) */
 .chat-sidebar {
     width: 320px;
-    /* Rộng hơn thanh icon bình thường */
     background-color: var(--bg-secondary);
     border-left: 1px solid var(--border-color);
     display: flex;
@@ -1903,7 +1898,6 @@ footer {
     padding: 20px;
 }
 
-/* System Popup in Chat */
 .system-popup {
     position: absolute;
     top: 60px;
@@ -1942,7 +1936,6 @@ footer {
    TOOLTIPS (Match Time & Team Balance)
    ========================================================== */
 
-/* 1. Tooltip Thời gian trận đấu (Nằm dưới chữ Đã kết thúc) */
 .time-tooltip {
     position: absolute;
     top: calc(100% + 10px);
@@ -1975,12 +1968,9 @@ footer {
     visibility: visible;
 }
 
-/* 2. Tooltip Team Balance (Nằm dưới nút sấm sét) */
 .map-icon {
     position: relative;
-    /* Bắt buộc để làm mỏ neo cho tooltip */
     cursor: pointer;
-    /* Các thuộc tính cũ */
     z-index: 2;
     background-color: var(--bg-main);
     border: 2px solid var(--accent);
@@ -1997,7 +1987,6 @@ footer {
 .team-balance-tooltip {
     position: absolute;
     top: calc(100% + 15px);
-    /* Cách icon sấm sét 1 khoảng */
     left: 50%;
     transform: translateX(-50%);
     width: 380px;
@@ -2019,7 +2008,6 @@ footer {
     visibility: visible;
 }
 
-/* Thanh gạch nối giữa icon và tooltip */
 .team-balance-tooltip::before {
     content: '';
     position: absolute;
@@ -2750,12 +2738,12 @@ footer {
 .right-nav {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 24px;
 }
 
 .r-icon {
     color: var(--text-muted);
-    font-size: 16px;
+    font-size: 20px;
     transition: 0.2s;
     font-weight: 700;
     text-decoration: none;
@@ -4805,4 +4793,334 @@ footer {
     gap: 10px;
     align-items: center;
     color: var(--text-muted);
+}
+
+.dashboard-layout {
+    position: relative;
+}
+
+.dashboard-main {
+    padding-right: 120px !important;
+}
+
+.right-sidebar {
+    position: absolute;
+    right: 20px;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    z-index: 50;
+    border-right: 1px solid var(--border-color);
+    width: 60px;
+}
+
+/* MOBILE INTERFACE FOR ranking.html */
+
+@media (max-width: 900px) {
+
+    .dashboard-body,
+    .dashboard-layout {
+        height: auto;
+        overflow: visible;
+        flex-direction: column;
+        padding-bottom: 60px;
+    }
+
+    .left-sidebar {
+        width: 100%;
+        height: auto;
+        padding: 15px;
+        border-right: none;
+        border-bottom: 1px solid var(--border-color);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sidebar-search {
+        width: 100%;
+        margin: 15px 0;
+    }
+
+    .sidebar-nav,
+    .sidebar-section,
+    .sidebar-bottom {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+        width: 100%;
+    }
+
+    .nav-link {
+        background-color: var(--bg-card);
+        padding: 8px 12px;
+        border-radius: 8px;
+        border-left: none !important;
+        border-bottom: 3px solid transparent;
+    }
+
+    .nav-link.active {
+        border-bottom-color: var(--accent);
+        background-color: rgba(58, 58, 255, 0.1);
+    }
+
+    .dashboard-main {
+        width: 100%;
+        padding: 20px 15px !important;
+        overflow-x: hidden;
+    }
+
+    .ranking-header-top {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .ranking-controls {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .filter-group {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .filter-select {
+        flex: 1;
+    }
+
+    .right-sidebar {
+        position: fixed;
+        top: auto;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 60px;
+        border-right: none;
+        border-top: 1px solid var(--border-color);
+        background-color: var(--bg-main);
+        z-index: 999;
+    }
+
+    .right-nav {
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        height: 100%;
+        padding: 0;
+        gap: 0;
+    }
+
+    .r-icon {
+        font-size: 20px;
+        padding: 10px;
+    }
+
+    .hero-steps {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .step-card {
+        padding: 20px;
+    }
+
+    .section-header-flex {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 15px;
+        margin-top: 20px;
+    }
+
+    .section-header-flex .btn-create,
+    .section-header-flex .t-filters {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .table-responsive {
+        width: 100vw;
+        margin-left: -15px;
+        padding: 0 15px;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .stats-table {
+        white-space: nowrap;
+        min-width: 800px;
+    }
+
+    .profile-grid {
+        flex-direction: column;
+    }
+
+    .profile-left-col {
+        width: 100%;
+    }
+
+    .profile-nav-top,
+    .sub-tabs {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .stat-summaries {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .stat-summaries::after {
+        display: none;
+    }
+
+    .performance-chart-area {
+        flex-direction: column;
+    }
+
+    .chart-side-stats {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .chart-side-stats .wl-record {
+        margin-bottom: 0;
+    }
+
+    .perf-stats-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px 0;
+    }
+
+    .ps-box:nth-child(3n) {
+        border-right: none;
+    }
+
+    .league-main-grid {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .post-card img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .content-grid-3 {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .module-container {
+        flex-direction: column;
+    }
+
+    .social-module {
+        width: 100%;
+    }
+
+    .play-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .match-sub-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .match-sub-header h2 {
+        margin-right: 0;
+    }
+
+    .scoreboard {
+        flex-direction: column;
+        gap: 20px;
+        padding: 10px 0;
+    }
+
+    .team-left,
+    .team-right {
+        justify-content: center;
+        width: 100%;
+    }
+
+    .team-right {
+        flex-direction: row-reverse;
+    }
+
+    .mvp-section {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .mvp-content {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+
+    .mvp-stats-grid {
+        width: 100%;
+    }
+
+    .top-stats-cards {
+        width: 100%;
+    }
+
+    .table-controls {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+        height: auto;
+    }
+
+    .table-tabs,
+    .table-filters,
+    .view-toggles {
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    .team-table-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .t-meta {
+        flex-wrap: wrap;
+    }
+
+    .highlights-grid {
+        padding-bottom: 10px;
+    }
+
+    .hl-card {
+        min-width: 240px;
+    }
+
+    .room-details-grid {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .match-center-actions {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .center-buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
 }
