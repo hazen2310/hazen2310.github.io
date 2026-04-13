@@ -5123,4 +5123,59 @@ footer {
         align-items: center;
         width: 100%;
     }
+
+    .match-type-cards {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .match-type-cards>div {
+        width: 100% !important;
+    }
+
+    .ms-header {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 15px;
+        height: auto;
+    }
+
+    .ms-tabs {
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .btn-find-match,
+    .ms-header button {
+        width: 100%;
+        margin-left: 0;
+        padding: 12px 0;
+    }
+
+    .match-type-cards {
+        display: grid !important;
+        grid-template-columns: 1fr !important;
+        gap: 20px;
+        width: 100% !important;
+    }
+
+    .match-type-cards>div,
+    .match-type-cards>a,
+    .match-type-cards>div>div,
+    .match-type-cards>a>div {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        justify-content: center !important;
+        text-align: center !important;
+        width: 100% !important;
+        box-sizing: border-box;
+    }
+
+    .match-type-cards img {
+        margin: 0 auto 15px auto !important;
+        display: block !important;
+    }
 }
